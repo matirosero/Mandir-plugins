@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: MRo Annoucement Bar
+Plugin Name: MRo Events
 Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
 Description: Sets up custom post types for Yoga Mandir.
 Version: 1.0
@@ -10,15 +10,15 @@ Plugin Type: Piklist
 License: GPL2
 */
 
-  add_filter('piklist_post_types', 'mro_announcement_bar_post_types');
-  function mro_announcement_bar_post_types($post_types)
+  add_filter('piklist_post_types', 'mro_events_post_types');
+  function mro_events_post_types($post_types)
   {
-    $post_types['mro-announcement'] = array(
-      'labels' => piklist('post_type_labels', 'Announcement')
-      ,'title' => __('Enter a new Annoucement')
-      ,'menu_position' => 5
-      ,'menu_icon' => 'dashicons-megaphone'
-      ,'page_icon' => 'dashicons-megaphone'
+    $post_types['mro-event'] = array(
+      'labels' => piklist('post_type_labels', 'Event')
+      ,'title' => __('Enter a new Event')
+      ,'menu_position' => 20
+      ,'menu_icon' => 'dashicons-calendar'
+      ,'page_icon' => 'dashicons-calendar'
       ,'supports' => array(
         'title'
         ,'editor'
@@ -26,11 +26,11 @@ License: GPL2
       )
       ,'public' => true
       ,'admin_body_class' => array(
-        'mro-announcement'
+        'mro-event'
       )
       ,'has_archive' => false
       ,'rewrite' => array(
-        'slug' => 'annoucement'
+        'slug' => 'eventos'
       )
       ,'capability_type' => 'post'
       // ,'edit_columns' => array(
