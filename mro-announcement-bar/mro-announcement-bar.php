@@ -21,8 +21,8 @@ License: GPL2
       ,'page_icon' => 'dashicons-megaphone'
       ,'supports' => array(
         'title'
-        ,'editor'
-        ,'excerpt'
+        // ,'editor'
+        // ,'excerpt'
       )
       ,'public' => true
       ,'admin_body_class' => array(
@@ -33,10 +33,6 @@ License: GPL2
         'slug' => 'annoucement'
       )
       ,'capability_type' => 'post'
-      // ,'edit_columns' => array(
-      //   'title' => __('Demo')
-      //   ,'author' => __('Assigned to')
-      // )
       ,'hide_meta_box' => array(
         'slug'
         ,'author'
