@@ -15,7 +15,7 @@ piklist('field', array(
 		  'field' => 'mro_announcement_date_start',
 		  'label' => __('Date start', 'mro-announcement'),
 		  'columns' => 6,
-		  'value' => date('M d, Y', time() + 604800), // set default value
+		  // 'value' => date('M d, Y', time() + 604800), // set default value
 		  'options' => array(
 		    'dateFormat' => 'yy-mm-dd', //was M d, yy
 			),
@@ -25,7 +25,7 @@ piklist('field', array(
 		  'field' => 'mro_announcement_date_end',
 		  'label' => __('Date end', 'mro-announcement'),
 		  'columns' => 6,
-		  'value' => date('M d, Y', time() + 604800), // set default value
+		  // 'value' => date('M d, Y', time() + 604800), // set default value
 		  'options' => array(
 		    'dateFormat' => 'yy-mm-dd',
 			),
