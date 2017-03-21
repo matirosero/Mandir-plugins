@@ -4,7 +4,7 @@ Title: Location
 Post Type: mro-event
 Context: normal
 Priority: high
-Order: 2
+Order: 4
 */
 
   piklist('field', array(
