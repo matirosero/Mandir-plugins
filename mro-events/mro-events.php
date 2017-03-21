@@ -21,8 +21,8 @@ License: GPL2
       ,'page_icon' => 'dashicons-calendar'
       ,'supports' => array(
         'title'
-        ,'editor'
-        ,'excerpt'
+        // ,'editor'
+        // ,'excerpt'
       )
       ,'public' => true
       ,'admin_body_class' => array(
@@ -38,8 +38,7 @@ License: GPL2
       //   ,'author' => __('Assigned to')
       // )
       ,'hide_meta_box' => array(
-        'slug'
-        ,'author'
+        'author'
       )
     );
 
