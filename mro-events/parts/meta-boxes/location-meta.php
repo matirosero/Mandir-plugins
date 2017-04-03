@@ -8,31 +8,52 @@ Order: 4
 */
 
   piklist('field', array(
-    'type' => 'radio'
-    ,'field' => 'mro_event_location'
-    ,'label' => __('Location: choose', 'piklist-demo')
-    ,'choices' => array(
-      'mandir' => 'Yoga Mandir'
-      ,'other' => __('Other', 'piklist-demo')
-    )
-    ,'value' => 'mandir'
+    'type' => 'radio',
+    'field' => 'mro_event_location',
+    'label' => __('Choose venue', 'mro-event'),
+    'help' => __('Choose OTHER to enter different venue details from the default (Yoga Mandir).', 'mro-event'),
+    'choices' => array(
+      'mandir' => 'Yoga Mandir',
+      'other' => __('Other', 'mro-event'),
+    ),
+    'value' => 'mandir',
   ));
 
   piklist('field', array(
-    'type' => 'text'
-    ,'field' => 'mro_event_location_name'
-    ,'label' => __('Venue name', 'piklist-demo')
-    ,'conditions' => array(
+    'type' => 'text',
+    'field' => 'mro_event_location_name',
+    'label' => __('Venue name', 'mro-event'),
+    'attributes' => array(
+        'class' => 'large-text',
+        // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-event'),
+        ),
+    'conditions' => array(
       array(
         'field' => 'mro_event_location'
         ,'value' => 'other'
       )
-    )
+    ),
+  ));
+
+  piklist('field', array(
+    'type' => 'textarea',
+    'field' => 'mro_event_location_address',
+    'label' => __('Venue address', 'mro-event'),
+    'attributes' => array(
+        'class' => 'large-text',
+        // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-event'),
+        ),
+    'conditions' => array(
+      array(
+        'field' => 'mro_event_location'
+        ,'value' => 'other'
+      )
+    ),
   ));
 
   piklist('field',array(
     'type'=>'html',
-    'label' =>  __('Move marker to venue location', 'piklist-demo'),
+    'label' =>  __('Move marker to venue location', 'mro-event'),
     'value' => '<div id="project_map" style="height:400px;"></div>',
     'conditions' => array(
       array(
@@ -46,8 +67,12 @@ Order: 4
 piklist('field',array(
     'type'=>'text',
     'label' => 'Latitude & Longitude',
-    'description' => __('Don\'t use unless you know what you\'re doing.', 'piklist-demo'),
+    'description' => __('Don\'t use unless you know what you\'re doing.', 'mro-event'),
     'field'=>'mro_event_latlong2',
+    'attributes' => array(
+        'class' => 'large-text',
+        'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-event'),
+        ),
     'conditions' => array(
       array(
         'field' => 'mro_event_location'
