@@ -7,80 +7,53 @@ Priority: high
 Order: 1
 */
 
+
+
+//WHether to show as date range
 piklist('field', array(
-  'type' => 'select',
-  'field' => 'mro_event_date_select',
-  'label' => __('Choose: date range or individual dates', 'mro-event'),
-  'help' => __('If it is "Jan 1-Jan2" and the schedule is always the same, choose DATE RANGE. If you need to specify different dates and schedules (Jan 1 1-3pm, Jan 2 9-11am), choose INDIVIDUAL DATES.', 'mro-event'),
-  'choices' => array(
-    'date_range' => __('Date range', 'mro-event'),
-    'individual_dates' => __('Individual dates', 'mro-event'),
+  'type' => 'checkbox'
+  ,'field' => 'mro_daterange_checkbox'
+  ,'label' => __('Date range?', 'mro-event')
+  ,'value' => ''
+  ,'choices' => array(
+    'first' => __('If enabled and only 2 dates exist, they will be shown as a date range.', 'mro-event'),
   ),
-  'value' => 'date_range',
+  'help' => __('If you specifiy only 2 dates and check this, they will be shown as a date range: "Jan 1-Jan2". Otherwise it is asummed that the dates should be listed individually: Jan 1 and January 2.', 'mro-event'),
 ));
 
-piklist('field', array(
-	'type' => 'group',
-	'label' =>  __('Date range', 'mro-event'),
-  'description' => __('Same schedule for all dates.', 'mro-event'),
-	'list' => false,
-  'conditions' => array(
-      array(
-        'field' => 'mro_event_date_select'
-        ,'value' => 'date_range'
-      )
-    ),
-	'fields' => array (
-	  array (
-		  'type' => 'datepicker',
-		  'field' => 'mro_event_date_start',
-		  'label' => __('Date start', 'mro-event'),
-		  'columns' => 12,
-		  // 'value' => date('M d, Y', time() + 604800), // set default value
-		  'options' => array(
-		    'dateFormat' => 'yy-mm-dd', //was M d, yy
-			),
-	  ),
-	  array (
-		  'type' => 'datepicker',
-		  'field' => 'mro_event_date_end',
-		  'label' => __('Date end', 'mro-event'),
-		  'columns' => 12,
-		  // 'value' => date('M d, Y', time() + 604800), // set default value
-		  'options' => array(
-		    'dateFormat' => 'yy-mm-dd',
-			),
-	  ),
-	  array (
-		  'type' => 'time',
-		  'field' => 'mro_event_time_start_all',
-		  'label' => __('Time start', 'mro-event'),
-		  'columns' => 6,
-		  'description' => 'Choose a time',
-	  ),
-	  array (
-		  'type' => 'time',
-		  'field' => 'mro_event_time_end_all',
-		  'label' => __('Time end', 'mro-event'),
-		  'columns' => 6,
-		  'description' => 'Choose a time',
-	  ),
-	),
-));
+//Same time for all dates?
+// piklist('field', array(
+//   'type' => 'radio'
+//   ,'field' => 'mro_event_same_time_all'
+//   ,'label' => __('Same time for all dates?', 'mro-event')
+//   ,'value' => 0
+//   ,'choices' => array(
+//     1 => __('Yes', 'mro-event'),
+//   ),
+// ));
+
+//   piklist('field', array(
+//     'type' => 'text'
+//     ,'field' => 'show_hide_field_checkbox'
+//     ,'label' => __('Show/Hide Field', 'piklist-demo')
+//     ,'description' => __('This field is toggled by the Checkbox field above', 'piklist-demo')
+//     ,'conditions' => array(
+//       array(
+//         'field' => 'mro_event_same_time_all'
+//         ,'value' => 1
+//       )
+//     )
+//   ));
 
 
 
+
+//Individual dates repeater fields
   piklist('field', array(
     'type' => 'group',
     'label' => __('Individual dates', 'mro-event'),
     'description' => __('Add as many dates as needed.', 'mro-event'),
     'add_more' => true,
-    'conditions' => array(
-      array(
-        'field' => 'mro_event_date_select',
-        'value' => 'individual_dates'
-      ),
-    ),
     'fields' => array(
       array(
         'type' => 'datepicker',
