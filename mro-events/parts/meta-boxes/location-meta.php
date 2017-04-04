@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Location
+Title: Lugar
 Post Type: mro-event
 Context: normal
 Priority: high
@@ -10,11 +10,11 @@ Order: 4
   piklist('field', array(
     'type' => 'radio',
     'field' => 'mro_event_location',
-    'label' => __('Choose venue', 'mro-event'),
-    'help' => __('Choose OTHER to enter different venue details from the default (Yoga Mandir).', 'mro-event'),
+    'label' => __('Choose venue', 'mro-events'),
+    'help' => __('Choose OTHER to enter different venue details from the default (Yoga Mandir).', 'mro-events'),
     'choices' => array(
       'mandir' => 'Yoga Mandir',
-      'other' => __('Other', 'mro-event'),
+      'other' => __('Other', 'mro-events'),
     ),
     'value' => 'mandir',
   ));
@@ -22,10 +22,10 @@ Order: 4
   piklist('field', array(
     'type' => 'text',
     'field' => 'mro_event_location_name',
-    'label' => __('Venue name', 'mro-event'),
+    'label' => __('Venue name', 'mro-events'),
     'attributes' => array(
         'class' => 'large-text',
-        // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-event'),
+        // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-events'),
         ),
     'conditions' => array(
       array(
@@ -38,10 +38,10 @@ Order: 4
   piklist('field', array(
     'type' => 'textarea',
     'field' => 'mro_event_location_address',
-    'label' => __('Venue address', 'mro-event'),
+    'label' => __('Venue address', 'mro-events'),
     'attributes' => array(
         'class' => 'large-text',
-        // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-event'),
+        // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-events'),
         ),
     'conditions' => array(
       array(
@@ -53,7 +53,7 @@ Order: 4
 
   piklist('field',array(
     'type'=>'html',
-    'label' =>  __('Move marker to venue location', 'mro-event'),
+    'label' =>  __('Move marker to venue location', 'mro-events'),
     'value' => '<div id="project_map" style="height:400px;"></div>',
     'conditions' => array(
       array(
@@ -67,11 +67,11 @@ Order: 4
 piklist('field',array(
     'type'=>'text',
     'label' => 'Latitude & Longitude',
-    'description' => __('Don\'t use unless you know what you\'re doing.', 'mro-event'),
+    'description' => __('Don\'t use unless you know what you\'re doing.', 'mro-events'),
     'field'=>'mro_event_latlong2',
     'attributes' => array(
         'class' => 'large-text',
-        'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-event'),
+        'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-events'),
         ),
     'conditions' => array(
       array(

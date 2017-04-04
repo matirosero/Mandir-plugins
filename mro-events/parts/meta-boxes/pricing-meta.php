@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Pricing
+Title: Precios
 Post Type: mro-event
 Context: normal
 Priority: high
@@ -10,11 +10,11 @@ Order: 3
 piklist('field', array(
   'type' => 'radio',
   'field' => 'mro_event_currency',
-  'label' => __('Currency', 'mro-event'),
-  'help' => __('This controlls what symbol is appended to the price.', 'mro-event'),
+  'label' => __('Currency', 'mro-events'),
+  'help' => __('This controlls what symbol is appended to the price.', 'mro-events'),
   'choices' => array(
-    '$' => __('US dollars ($)', 'mro-event'),
-    '₡' => __('CR colones (₡)', 'mro-event'),
+    '$' => __('US dollars ($)', 'mro-events'),
+    '₡' => __('CR colones (₡)', 'mro-events'),
   ),
   'value' => '$',
 ));
@@ -22,12 +22,12 @@ piklist('field', array(
 piklist('field', array(
   'type' => 'text',
   'field' => 'mro_event_price',
-  'label' => __('Regular price', 'mro-event'),
-  'description' => __('Must be a number.', 'mro-event'),
-  'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-event'),
+  'label' => __('Regular price', 'mro-events'),
+  'description' => __('Must be a number.', 'mro-events'),
+  'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-events'),
   'attributes' => array(
     // 'class' => 'regular-text',
-    'placeholder' => __('100', 'mro-event'),
+    'placeholder' => __('100', 'mro-events'),
     ),
   'validate' => array(
     array(
@@ -38,19 +38,19 @@ piklist('field', array(
 
 piklist('field', array(
   'type' => 'group',
-  'label' =>  __('Pricing options', 'mro-event'),
-  'description' => __('Add as many as needed. Price must be a number.', 'mro-event'),
+  'label' =>  __('Pricing options', 'mro-events'),
+  'description' => __('Add as many as needed. Price must be a number.', 'mro-events'),
   'list' => false,
   'add_more' => true,
   'fields' => array (
     array (
       'type' => 'text',
       'field' => 'mro_event_price_option',
-      'label' => __('Price', 'mro-event'),
-      'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-event'),
+      'label' => __('Price', 'mro-events'),
+      'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-events'),
       'attributes' => array(
         'class' => 'large-text',
-        'placeholder' => __('100', 'mro-event'),
+        'placeholder' => __('100', 'mro-events'),
         ),
       'validate' => array(
         array(
@@ -64,10 +64,10 @@ piklist('field', array(
     array (
       'type' => 'text',
       'field' => 'mro_event_price_option_description',
-      'label' => __('Descripción', 'mro-event'),
+      'label' => __('Descripción', 'mro-events'),
       'attributes' => array(
         'class' => 'large-text',
-        'placeholder' => __('Early bird price before May 5', 'mro-event'),
+        'placeholder' => __('Early bird price before May 5', 'mro-events'),
         ),
       // 'add_more' => true,
       'columns' => 12,
@@ -79,12 +79,12 @@ piklist('field', array(
   piklist('field', array(
     'type' => 'textarea',
     'field' => 'mro_event_pricing_notes',
-    'label' => __('Pricing notes', 'mro-event'),
-    'description' => __('Further explanation needed to clarify pricing.', 'mro-event'),
-    'help' => __('For instance, if you need to explain discount conditions, payment schedule, etc.', 'mro-event'),
+    'label' => __('Pricing notes', 'mro-events'),
+    'description' => __('Further explanation needed to clarify pricing.', 'mro-events'),
+    'help' => __('For instance, if you need to explain discount conditions, payment schedule, etc.', 'mro-events'),
     'attributes' => array(
       'class' => 'large-text',
-      // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-event'),
+      // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-events'),
       ),
   ));
 

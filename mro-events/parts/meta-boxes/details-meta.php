@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Details
+Title: Detalles
 Post Type: mro-event
 Context: normal
 Priority: high

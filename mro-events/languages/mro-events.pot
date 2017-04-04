@@ -1,0 +1,184 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: MRo Events\n"
+"POT-Creation-Date: 2017-04-04 09:37-0600\n"
+"PO-Revision-Date: 2017-04-04 09:37-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: mro-events.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: mro-events.php:20
+msgid "Enter a new Event"
+msgstr ""
+
+#: mro-events.php:54
+msgid "is not a number"
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:16
+msgid "Date range?"
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:19
+msgid "If enabled and only 2 dates exist, they will be shown as a date range."
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:21
+msgid ""
+"If you specifiy only 2 dates and check this, they will be shown as a date "
+"range: \"Jan 1-Jan2\". Otherwise it is asummed that the dates should be "
+"listed individually: Jan 1 and January 2."
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:54
+msgid "Individual dates"
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:55
+msgid "Add as many dates as needed."
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:61
+msgid "Date"
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:70
+msgid "Time start"
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:76
+msgid "Time end"
+msgstr ""
+
+#: parts/meta-boxes/location-meta.php:13
+msgid "Choose venue"
+msgstr ""
+
+#: parts/meta-boxes/location-meta.php:14
+msgid ""
+"Choose OTHER to enter different venue details from the default (Yoga Mandir)."
+msgstr ""
+
+#: parts/meta-boxes/location-meta.php:17
+msgid "Other"
+msgstr ""
+
+#: parts/meta-boxes/location-meta.php:25
+msgid "Venue name"
+msgstr ""
+
+#: parts/meta-boxes/location-meta.php:41
+msgid "Venue address"
+msgstr ""
+
+#: parts/meta-boxes/location-meta.php:56
+msgid "Move marker to venue location"
+msgstr ""
+
+#: parts/meta-boxes/location-meta.php:70
+msgid "Don't use unless you know what you're doing."
+msgstr ""
+
+#: parts/meta-boxes/location-meta.php:74
+msgid "i.e. \"$100 antes del 1 de mayo\""
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:13
+msgid "Currency"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:14
+msgid "This controlls what symbol is appended to the price."
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:16
+msgid "US dollars ($)"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:17
+msgid "CR colones (₡)"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:25
+msgid "Regular price"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:26
+msgid "Must be a number."
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:27 parts/meta-boxes/pricing-meta.php:50
+msgid "Must be \"100\", \"10.5\", etc. Not \"100 dollars\"."
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:30 parts/meta-boxes/pricing-meta.php:53
+msgid "100"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:41
+msgid "Pricing options"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:42
+msgid "Add as many as needed. Price must be a number."
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:49
+msgid "Price"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:67
+msgid "Descripción"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:70
+msgid "Early bird price before May 5"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:82
+msgid "Pricing notes"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:83
+msgid "Further explanation needed to clarify pricing."
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:84
+msgid ""
+"For instance, if you need to explain discount conditions, payment schedule, "
+"etc."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "MRo Events"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://URI_Of_Page_Describing_Plugin_and_Updates"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Sets up custom post types for Yoga Mandir."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mat Rosero"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://2tabbies.com"
+msgstr ""

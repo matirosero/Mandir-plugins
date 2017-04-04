@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Dates
+Title: Fechas
 Post Type: mro-event
 Context: normal
 Priority: high
@@ -13,22 +13,22 @@ Order: 1
 piklist('field', array(
   'type' => 'checkbox'
   ,'field' => 'mro_daterange_checkbox'
-  ,'label' => __('Date range?', 'mro-event')
-  ,'value' => ''
+  ,'label' => __('Date range?', 'mro-events')
+  ,'value' => 0
   ,'choices' => array(
-    'first' => __('If enabled and only 2 dates exist, they will be shown as a date range.', 'mro-event'),
+    1 => __('If enabled and only 2 dates exist, they will be shown as a date range.', 'mro-events'),
   ),
-  'help' => __('If you specifiy only 2 dates and check this, they will be shown as a date range: "Jan 1-Jan2". Otherwise it is asummed that the dates should be listed individually: Jan 1 and January 2.', 'mro-event'),
+  'help' => __('If you specifiy only 2 dates and check this, they will be shown as a date range: "Jan 1-Jan2". Otherwise it is asummed that the dates should be listed individually: Jan 1 and January 2.', 'mro-events'),
 ));
 
 //Same time for all dates?
 // piklist('field', array(
 //   'type' => 'radio'
 //   ,'field' => 'mro_event_same_time_all'
-//   ,'label' => __('Same time for all dates?', 'mro-event')
+//   ,'label' => __('Same time for all dates?', 'mro-events')
 //   ,'value' => 0
 //   ,'choices' => array(
-//     1 => __('Yes', 'mro-event'),
+//     1 => __('Yes', 'mro-events'),
 //   ),
 // ));
 
@@ -51,14 +51,14 @@ piklist('field', array(
 //Individual dates repeater fields
   piklist('field', array(
     'type' => 'group',
-    'label' => __('Individual dates', 'mro-event'),
-    'description' => __('Add as many dates as needed.', 'mro-event'),
+    'label' => __('Individual dates', 'mro-events'),
+    'description' => __('Add as many dates as needed.', 'mro-events'),
     'add_more' => true,
     'fields' => array(
       array(
         'type' => 'datepicker',
         'field' => 'mro_event_date',
-        'label' => __('Date', 'mro-event'),
+        'label' => __('Date', 'mro-events'),
         'columns' => 12,
         'options' => array(
 			    'dateFormat' => 'yy-mm-dd',
@@ -67,13 +67,13 @@ piklist('field', array(
       ,array(
         'type' => 'time',
         'field' => 'mro_event_time_start',
-        'label' => __('Time start', 'mro-event'),
+        'label' => __('Time start', 'mro-events'),
         'columns' => 6,
       )
       ,array(
         'type' => 'time',
         'field' => 'mro_event_time_end',
-        'label' => __('Time end', 'mro-event'),
+        'label' => __('Time end', 'mro-events'),
         'columns' => 6,
       )
     )
