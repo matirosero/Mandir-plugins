@@ -39,32 +39,32 @@ add_action( 'plugins_loaded', 'mro_events_load_plugin_textdomain' );
     );
 
     $post_types['mro-event'] = array(
-      'labels' => $labels
-      ,'title' => __('Enter a new Event', 'mro-events')
-      ,'menu_position' => 20
-      ,'menu_icon' => 'dashicons-calendar'
-      ,'page_icon' => 'dashicons-calendar'
-      ,'supports' => array(
-        'title'
-        // ,'editor'
-        // ,'excerpt'
-      )
-      ,'public' => true
-      ,'admin_body_class' => array(
-        'mro-event'
-      )
-      ,'has_archive' => false
-      ,'rewrite' => array(
-        'slug' => 'eventos'
-      )
-      ,'capability_type' => 'post'
-      // ,'edit_columns' => array(
-      //   'title' => __('Demo')
-      //   ,'author' => __('Assigned to')
-      // )
-      ,'hide_meta_box' => array(
-        'author'
-      )
+      'labels' => $labels,
+      'title' => __('Enter a new Event', 'mro-events'),
+      'menu_position' => 20,
+      'menu_icon' => 'dashicons-calendar',
+      'page_icon' => 'dashicons-calendar',
+      'supports' => array(
+        'title',
+        // 'editor',
+        // 'excerpt',
+      ),
+      'public' => true,
+      'admin_body_class' => array(
+        'mro-event',
+      ),
+      'has_archive' => false,
+      'rewrite' => array(
+        'slug' => 'eventos',
+      ),
+      'capability_type' => 'post',
+      // 'edit_columns' => array(
+      //   'title' => __('Demo'),
+      //   'author' => __('Assigned to'),
+      // ),
+      'hide_meta_box' => array(
+        'author',
+      ),
     );
 
     return $post_types;
@@ -73,8 +73,8 @@ add_action( 'plugins_loaded', 'mro_events_load_plugin_textdomain' );
   add_filter('piklist_validation_rules', 'check_valid_number', 11);
   function check_valid_number($validation_rules) {
     $validation_rules['valid_number'] = array(
-      'rule' => "/[-+]?[0-9]*[.,]?[0-9]+/"
-      ,'message' => __('is not a number', 'mro-events')
+      'rule' => "/[-+]?[0-9]*[.,]?[0-9]+/",
+      'message' => __('is not a number', 'mro-events')
     );
    
     return $validation_rules;

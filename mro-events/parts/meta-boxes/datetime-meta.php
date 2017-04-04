@@ -11,11 +11,11 @@ Order: 1
 
 //WHether to show as date range
 piklist('field', array(
-  'type' => 'checkbox'
-  ,'field' => 'mro_daterange_checkbox'
-  ,'label' => __('Date range?', 'mro-events')
-  ,'value' => 0
-  ,'choices' => array(
+  'type' => 'checkbox',
+  'field' => 'mro_daterange_checkbox',
+  'label' => __('Date range?', 'mro-events'),
+  'value' => 0,
+  'choices' => array(
     1 => __('If enabled and only 2 dates exist, they will be shown as a date range.', 'mro-events'),
   ),
   'help' => __('If you specifiy only 2 dates and check this, they will be shown as a date range: "Jan 1-Jan2". Otherwise it is asummed that the dates should be listed individually: Jan 1 and January 2.', 'mro-events'),
@@ -63,19 +63,19 @@ piklist('field', array(
         'options' => array(
 			    'dateFormat' => 'yy-mm-dd',
 				),
-      )
-      ,array(
+      ),
+      array(
         'type' => 'time',
         'field' => 'mro_event_time_start',
         'label' => __('Time start', 'mro-events'),
         'columns' => 6,
-      )
-      ,array(
+      ),
+      array(
         'type' => 'time',
         'field' => 'mro_event_time_end',
         'label' => __('Time end', 'mro-events'),
         'columns' => 6,
-      )
-    )
+      ),
+    ),
   ));
 
