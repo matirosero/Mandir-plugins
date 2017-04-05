@@ -39,3 +39,17 @@ piklist('field', array(
     )
   ),
 ));
+
+
+//Pricing notes
+piklist('field', array(
+  'type' => 'textarea',
+  'field' => 'mro_event_pricing_notes',
+  'label' => __('Pricing notes', 'mro-events'),
+  'description' => __('Further explanation needed to clarify pricing.', 'mro-events'),
+  'help' => __('For instance, if you need to explain discount conditions, payment schedule, etc.', 'mro-events'),
+  'attributes' => array(
+    'class' => 'large-text',
+    // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-events'),
+    ),
+));
