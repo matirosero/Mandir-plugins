@@ -41,6 +41,45 @@ piklist('field', array(
 ));
 
 
+// Other pricing options
+piklist('field', array(
+  'type' => 'group',
+  'field' => 'mro_event_pricing_options',
+  'label' =>  __('Pricing options', 'mro-events'),
+  'description' => __('Add as many as needed. Price must be a number.', 'mro-events'),
+  'list' => false,
+  'add_more' => true,
+  'fields' => array (
+    array (
+      'type' => 'text',
+      'field' => 'price',
+      'label' => __('Price', 'mro-events'),
+      'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-events'),
+      'attributes' => array(
+        'class' => 'large-text',
+        'placeholder' => __('100', 'mro-events'),
+        ),
+      'validate' => array(
+        array(
+          'type' => 'valid_number'
+        )
+      ),
+      'columns' => 6,
+    ),
+    array (
+      'type' => 'text',
+      'field' => 'description',
+      'label' => __('Descripción', 'mro-events'),
+      'attributes' => array(
+        'class' => 'large-text',
+        'placeholder' => __('Early bird price before May 5', 'mro-events'),
+        ),
+      'columns' => 12,
+    ),
+  ),
+));
+
+
 //Pricing notes
 piklist('field', array(
   'type' => 'textarea',
