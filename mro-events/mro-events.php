@@ -12,10 +12,10 @@ Text Domain: mro-events
 Domain Path: /languages
 */
 
-function mro_events_load_plugin_textdomain() {
-    load_plugin_textdomain( 'mro-events', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'mro_events_load_plugin_textdomain' );
+// function mro_events_load_plugin_textdomain() {
+//     load_plugin_textdomain( 'mro-events', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+// }
+// add_action( 'plugins_loaded', 'mro_events_load_plugin_textdomain' );
 
 
   add_filter('piklist_post_types', 'mro_events_post_types');
@@ -46,6 +46,7 @@ add_action( 'plugins_loaded', 'mro_events_load_plugin_textdomain' );
       'page_icon' => 'dashicons-calendar',
       'supports' => array(
         'title',
+        'thumbnail',
         // 'editor',
         // 'excerpt',
       ),
