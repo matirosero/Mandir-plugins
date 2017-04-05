@@ -38,6 +38,7 @@ piklist('field', array(
 
 piklist('field', array(
   'type' => 'group',
+  'field' => 'mro_event_pricing_options',
   'label' =>  __('Pricing options', 'mro-events'),
   'description' => __('Add as many as needed. Price must be a number.', 'mro-events'),
   'list' => false,
@@ -45,7 +46,7 @@ piklist('field', array(
   'fields' => array (
     array (
       'type' => 'text',
-      'field' => 'mro_event_price_option',
+      'field' => 'price',
       'label' => __('Price', 'mro-events'),
       'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-events'),
       'attributes' => array(
@@ -63,7 +64,7 @@ piklist('field', array(
     ),
     array (
       'type' => 'text',
-      'field' => 'mro_event_price_option_description',
+      'field' => 'description',
       'label' => __('Descripción', 'mro-events'),
       'attributes' => array(
         'class' => 'large-text',
@@ -75,6 +76,9 @@ piklist('field', array(
     ),
   ),
 ));
+
+
+
 
   piklist('field', array(
     'type' => 'textarea',
