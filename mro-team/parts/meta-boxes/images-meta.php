@@ -8,12 +8,10 @@ Order: 1
 */
 ?>
 
-<p class="piklist-demo-highlight">
-  <?php _e('With Piklist you can easily replicate the WordPress Featured Image field, with an added bonus. Piklist allows you to use multiple featured images.', 'piklist-demo');?>
-</p>
+
 
 <?php
-  
+
   // piklist('field', array(
   //   'type' => 'file',
   //   'field' => '_thumbnail_id', // Use this field to match WordPress featured image field name.,
@@ -23,7 +21,7 @@ Order: 1
   //     'button' => __('Set featured image(s)', 'piklist-demo'),
   //   ),
   // ));
-  
+
   // piklist('shared/code-locater', array(
   //   'location' => __FILE__,
   //   'type' => 'Meta Box',
@@ -76,19 +74,9 @@ Order: 1
       ),
     ),
   ));
-  
-  // piklist('field', array(
-  //   'type' => 'file',
-  //   'field' => 'upload_media',
-  //   'scope' => 'post_meta',
-  //   'label' => __('Media Uploader', 'piklist-demo'),
-  //   'options' => array(
-  //     'modal_title' => __('Add File(s)', 'piklist-demo'),
-  //     'button' => __('Add', 'piklist-demo')
-  //   ),
+
+
+  // piklist('shared/code-locater', array(
+  //   'location' => __FILE__,
+  //   'type' => 'Meta Box',
   // ));
-  
-  piklist('shared/code-locater', array(
-    'location' => __FILE__,
-    'type' => 'Meta Box',
-  ));
