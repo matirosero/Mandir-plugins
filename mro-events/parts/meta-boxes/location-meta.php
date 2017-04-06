@@ -4,7 +4,7 @@ Title: Lugar
 Post Type: mro-event
 Context: normal
 Priority: high
-Order: 4
+Order: 5
 */
 
 // Choose: Mandir or other

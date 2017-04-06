@@ -4,7 +4,7 @@ Title: Detalles
 Post Type: mro-event
 Context: normal
 Priority: high
-Order: 2
+Order: 3
 */
 
 piklist('field', array(
