@@ -22,5 +22,5 @@ piklist('field', array(
     'dfw' => false,
     'tinymce' => true,
     'quicktags' => true,
-  )
+  ),
 ));

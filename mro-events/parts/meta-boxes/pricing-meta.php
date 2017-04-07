@@ -89,6 +89,7 @@ piklist('field', array(
   'help' => __('For instance, if you need to explain discount conditions, payment schedule, etc.', 'mro-events'),
   'attributes' => array(
     'class' => 'large-text',
+    "maxlength"  => '180',
     // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-events'),
     ),
 ));
