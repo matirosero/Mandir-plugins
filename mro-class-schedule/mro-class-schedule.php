@@ -44,7 +44,7 @@ function mro_class_schedule_post_types($post_types) {
 	$post_types['mro-class'] = array(
 	  // 'labels' => $labels,
 	  'labels' => piklist('post_type_labels', 'Clase'),
-	  'title' => __('Enter a new Class', 'mro-events'),
+	  'title' => __('Enter a new Class', 'mro-class-schedule'),
 	  'menu_position' => 20,
 	  'menu_icon' => 'dashicons-clock',
 	  'page_icon' => 'dashicons-clock',
@@ -95,4 +95,43 @@ function mro_class_schedule_tax($taxonomies) {
       ),
     );
   return $taxonomies;
+}
+
+
+
+  add_filter('piklist_admin_pages', 'mro_schedule_admin_pages');
+  function mro_schedule_admin_pages($pages)
+  {
+    $pages[] = array(
+      'page_title' => __('Class Schedule Settings', 'mro-class-schedule'),
+      'menu_title' => __('Class Schedule Settings', 'mro-class-schedule'),
+      'sub_menu' => 'edit.php?post_type=mro-class',
+      'capability' => 'manage_options',
+      'menu_slug' => 'mro_schedule_settings',
+      'setting' => 'mro_class_schedule_settings',
+      'menu_icon' => piklist('url', 'piklist') . '/parts/img/piklist-icon.png',
+      'page_icon' => piklist('url', 'piklist') . '/parts/img/piklist-page-icon-32.png',
+      // 'single_line' => true,
+      'default_tab' => 'Basic',
+      // 'layout' => 'meta-boxes', // NOTE: Uncomment this to use the meta box layout on this settings page!
+      'save_text' => __('Save Schedule Settings', 'mro-class-schedule'),
+    );
+
+
+    
+    return $pages;
+  }
+
+
+// Return an array formatted for select field
+function mro_class_schedule_build_choices($choices) {
+	foreach ($choices as $value => $choice):
+		if ($choice === ''):
+			$choices[$value] = sprintf(__('#%d (no title)'), $value);
+		endif;
+	endforeach;
+
+	$choices = array_replace(array('' => '&mdash; Select &mdash;'), $choices);
+
+	return $choices;
 }
