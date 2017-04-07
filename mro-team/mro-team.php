@@ -54,22 +54,22 @@ function mro_team_post_types($post_types) {
 }
 
 
-  add_filter('piklist_taxonomies', 'mro_team_tax');
-  function mro_team_tax($taxonomies) {
-     $taxonomies[] = array(
-        'post_type' => 'mro-team',
-        'name' => 'mro_team_tax',
-        'show_admin_column' => true,
-        'configuration' => array(
-          'hierarchical' => true,
-          'labels' => piklist('taxonomy_labels', 'Tag'),
-          'hide_meta_box' => false,
-          'show_ui' => true,
-          'query_var' => true,
-          'rewrite' => array( 
-            'slug' => 'tipo',
-          ),
+add_filter('piklist_taxonomies', 'mro_team_tax');
+function mro_team_tax($taxonomies) {
+   $taxonomies[] = array(
+      'post_type' => 'mro-team',
+      'name' => 'mro_team_tax',
+      'show_admin_column' => true,
+      'configuration' => array(
+        'hierarchical' => true,
+        'labels' => piklist('taxonomy_labels', 'Tag'),
+        'hide_meta_box' => false,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array( 
+          'slug' => 'tipo',
         ),
-      );
-    return $taxonomies;
-  }
+      ),
+    );
+  return $taxonomies;
+}
