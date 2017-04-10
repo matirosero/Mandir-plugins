@@ -88,7 +88,7 @@ function mro_schedule_fields_array($group) {
     //Select class
     array(
       'type' => 'select',
-      'field' => 'team_id',
+      'field' => 'class_teacher_id',
       'label' => __('Choose teacher', 'mro-class-schedule'),
       'columns' => 4,
       'choices' => mro_class_schedule_get_teachers('regular'),
@@ -149,7 +149,7 @@ function mro_schedule_fields_array($group) {
     array(
       'type' => 'text',
       'field' => 'manual_teacher_name',
-      'label' => __('Teacher\s name', 'mro-class-schedule'),
+      'label' => __('Teacher\'s name', 'mro-class-schedule'),
       'columns' => 4,
       'conditions' => array(
         'relation' => 'or',
@@ -158,7 +158,7 @@ function mro_schedule_fields_array($group) {
           'value' => 'other',
         ),
         array(
-          'field' => $group.':team_id',
+          'field' => $group.':class_teacher_id',
           'value' => 'other',
         ),
       ),
