@@ -89,7 +89,7 @@ function mro_class_schedule_tax($taxonomies) {
         'hide_meta_box' => false,
         'show_ui' => true,
         'query_var' => true,
-        'rewrite' => array( 
+        'rewrite' => array(
           'slug' => 'nivel',
         ),
       ),
@@ -101,7 +101,7 @@ function mro_class_schedule_tax($taxonomies) {
 
 add_filter('piklist_admin_pages', 'mro_schedule_admin_pages');
 function mro_schedule_admin_pages($pages) {
-  
+
 	//Class Schedule settings
   $pages[] = array(
     'page_title' => __('Class Schedule Settings', 'mro-class-schedule'),
@@ -138,8 +138,32 @@ function mro_schedule_admin_pages($pages) {
 }
 
 
+// Build teachers array
+function mro_class_schedule_get_teachers($terms) {
+  $teachers = get_posts(
+    array(
+      'post_type' => 'mro-team',
+      'orderby' => 'title',
+      'order' => 'ASC',
+      'posts_per_page' => -1,
+      'tax_query' => array(
+        array(
+          'taxonomy' => 'mro_team_tax',
+          'field'    => 'slug',
+          'terms'    => $terms,
+        ),
+      ),
+    ), 'objects');
+
+	$teachers = piklist($teachers, array('ID', 'post_title'));
+	$teachers = mro_class_schedule_build_choices($teachers,true);
+
+  return $teachers;
+}
+
+
 // Return an array formatted for select field
-function mro_class_schedule_build_choices($choices) {
+function mro_class_schedule_build_choices($choices,$manual_option=false) {
 	foreach ($choices as $value => $choice):
 		if ($choice === ''):
 			$choices[$value] = sprintf(__('#%d (no title)'), $value);
@@ -147,6 +171,11 @@ function mro_class_schedule_build_choices($choices) {
 	endforeach;
 
 	$choices = array_replace(array('' => '&mdash; Select &mdash;'), $choices);
+
+	if ($manual_option==true) :
+
+		$choices['other'] = __('Other (enter manually)', 'piklist-demo');
+	endif;
 
 	return $choices;
 }

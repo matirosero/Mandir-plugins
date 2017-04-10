@@ -42,28 +42,21 @@ $events = piklist($events, array('ID', 'post_title'));
 $events = mro_class_schedule_build_choices($events);
 
 
-// Build teachers array
-$teachers = get_posts(
-	array(
-    'post_type' => 'mro-team',
-    'orderby' => 'title',
-    'order' => 'ASC',
-    'posts_per_page' => -1,
-    'tax_query' => array(
-			array(
-				'taxonomy' => 'mro_team_tax',
-				'field'    => 'slug',
-				'terms'    => 'regular',
-			),
-		),
-  ), 'objects');
-
-$teachers = piklist($teachers, array('ID', 'post_title'));
-$teachers = mro_class_schedule_build_choices($teachers);
-
-
 // Store the repeatable block in array
 $repeatable_fields = array(
+
+    //Select what will go in this space
+    array(
+      'type' => 'select',
+      'field' => 'type',
+      'label' => __('Choose type', 'piklist-demo'),
+      'columns' => 6,
+      'choices' => array(
+        'class' => __('Class', 'piklist-demo'),
+        'event' => __('Event', 'piklist-demo'),
+        'manual' => __('Manual entry', 'piklist-demo'),
+      ),
+    ),
 
     //Select class
     array(
@@ -72,23 +65,12 @@ $repeatable_fields = array(
       'label' => __('Choose class', 'piklist-demo'),
       'columns' => 6,
       'choices' => $classes,
-    ),
-
-    //Select event
-    // array(
-    //   'type' => 'select',
-    //   'field' => 'event_id',
-    //   'label' => __('Choose event', 'piklist-demo'),
-    //   'columns' => 12,
-    //   'choices' => $events,
-    // ),
-
-		//Enter manual block name
-		array(
-      'type' => 'text',
-      'field' => 'manual_block_name',
-      'label' => __('-OR- enter manually', 'piklist-demo'),
-      'columns' => 6,
+      'conditions' => array(
+        array(
+          'field' => 'mro_schedule_monday:type',
+          'value' => 'class',
+        ),
+      ),
     ),
 
     //Select class
@@ -97,7 +79,77 @@ $repeatable_fields = array(
       'field' => 'team_id',
       'label' => __('Choose teacher', 'piklist-demo'),
       'columns' => 12,
-      'choices' => $teachers,
+      'choices' => mro_class_schedule_get_teachers('regular'),
+      'conditions' => array(
+        array(
+          'field' => 'mro_schedule_monday:type',
+          'value' => 'class',
+        ),
+      ),
+    ),
+
+    // Select event
+    array(
+      'type' => 'select',
+      'field' => 'event_id',
+      'label' => __('Choose event', 'piklist-demo'),
+      'columns' => 12,
+      'choices' => $events,
+      'conditions' => array(
+        array(
+          'field' => 'mro_schedule_monday:type',
+          'value' => 'event',
+        ),
+      ),
+    ),
+
+		//Enter manual block name
+		array(
+      'type' => 'text',
+      'field' => 'manual_block_name',
+      'label' => __('-OR- enter manually', 'piklist-demo'),
+      'columns' => 6,
+      'conditions' => array(
+        array(
+          'field' => 'mro_schedule_monday:type',
+          'value' => 'manual',
+        ),
+      ),
+    ),
+
+    //Select class
+    array(
+      'type' => 'select',
+      'field' => 'event_teacher_id',
+      'label' => __('Choose teacher', 'piklist-demo'),
+      'columns' => 12,
+      'choices' => mro_class_schedule_get_teachers('taller'),
+      'conditions' => array(
+        array(
+          'field' => 'mro_schedule_monday:type',
+          'value' => array('event','manual'),
+        ),
+      ),
+    ),
+
+
+    //Enter manual teacher name
+    array(
+      'type' => 'text',
+      'field' => 'manual_teacher_name',
+      'label' => __('Teacher\s name', 'piklist-demo'),
+      'columns' => 6,
+      'conditions' => array(
+        'relation' => 'or',
+        array(
+          'field' => 'mro_schedule_monday:event_teacher_id',
+          'value' => 'other',
+        ),
+        array(
+          'field' => 'mro_schedule_monday:team_id',
+          'value' => 'other',
+        ),
+      ),
     ),
 
     //Time start
