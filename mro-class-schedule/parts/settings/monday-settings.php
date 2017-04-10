@@ -6,10 +6,6 @@ Tab: Basic
 */
 
 
-
-
-
-
 // Build classes array
 $classes = get_posts(
 	array(

@@ -76,7 +76,7 @@ function mro_events_post_types($post_types) {
 }
 
 
-// Validation for valid number
+// Validation for number
 add_filter('piklist_validation_rules', 'check_valid_number', 11);
 function check_valid_number($validation_rules) {
   $validation_rules['valid_number'] = array(

@@ -99,28 +99,43 @@ function mro_class_schedule_tax($taxonomies) {
 
 
 
-  add_filter('piklist_admin_pages', 'mro_schedule_admin_pages');
-  function mro_schedule_admin_pages($pages)
-  {
-    $pages[] = array(
-      'page_title' => __('Class Schedule Settings', 'mro-class-schedule'),
-      'menu_title' => __('Class Schedule Settings', 'mro-class-schedule'),
-      'sub_menu' => 'edit.php?post_type=mro-class',
-      'capability' => 'manage_options',
-      'menu_slug' => 'mro_schedule_settings',
-      'setting' => 'mro_class_schedule_settings',
-      'menu_icon' => piklist('url', 'piklist') . '/parts/img/piklist-icon.png',
-      'page_icon' => piklist('url', 'piklist') . '/parts/img/piklist-page-icon-32.png',
-      // 'single_line' => true,
-      'default_tab' => 'Basic',
-      // 'layout' => 'meta-boxes', // NOTE: Uncomment this to use the meta box layout on this settings page!
-      'save_text' => __('Save Schedule Settings', 'mro-class-schedule'),
-    );
+add_filter('piklist_admin_pages', 'mro_schedule_admin_pages');
+function mro_schedule_admin_pages($pages) {
+  
+	//Class Schedule settings
+  $pages[] = array(
+    'page_title' => __('Class Schedule Settings', 'mro-class-schedule'),
+    'menu_title' => __('Class Schedule Settings', 'mro-class-schedule'),
+    'sub_menu' => 'edit.php?post_type=mro-class',
+    'capability' => 'manage_options',
+    'menu_slug' => 'mro_schedule_settings',
+    'setting' => 'mro_class_schedule_settings',
+    'menu_icon' => piklist('url', 'piklist') . '/parts/img/piklist-icon.png',
+    'page_icon' => piklist('url', 'piklist') . '/parts/img/piklist-page-icon-32.png',
+    // 'single_line' => true,
+    'default_tab' => 'Basic',
+    // 'layout' => 'meta-boxes', // NOTE: Uncomment this to use the meta box layout on this settings page!
+    'save_text' => __('Save Schedule Settings', 'mro-class-schedule'),
+  );
 
+	//Prices settings
+  $pages[] = array(
+    'page_title' => __('Prices', 'mro-class-schedule'),
+    'menu_title' => __('Prices', 'mro-class-schedule'),
+    'sub_menu' => 'edit.php?post_type=mro-class',
+    'capability' => 'manage_options',
+    'menu_slug' => 'mro_class_prices',
+    'setting' => 'mro_class_schedule_prices',
+    'menu_icon' => piklist('url', 'piklist') . '/parts/img/piklist-icon.png',
+    'page_icon' => piklist('url', 'piklist') . '/parts/img/piklist-page-icon-32.png',
+    // 'single_line' => true,
+    'default_tab' => 'Basic',
+    // 'layout' => 'meta-boxes', // NOTE: Uncomment this to use the meta box layout on this settings page!
+    'save_text' => __('Save Prices', 'mro-class-schedule'),
+  );
 
-    
-    return $pages;
-  }
+  return $pages;
+}
 
 
 // Return an array formatted for select field
@@ -135,3 +150,5 @@ function mro_class_schedule_build_choices($choices) {
 
 	return $choices;
 }
+
+
