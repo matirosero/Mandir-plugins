@@ -15,7 +15,7 @@ Domain Path: /languages
 
 //Textdomain
 function mro_class_schedule_load_plugin_textdomain() {
-    load_plugin_textdomain( 'mro-events', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+    load_plugin_textdomain( 'mro-class-schedule', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'mro_class_schedule_load_plugin_textdomain' );
 

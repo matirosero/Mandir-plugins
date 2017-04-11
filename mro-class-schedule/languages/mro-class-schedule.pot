@@ -1,0 +1,216 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: MRo Class Schedule\n"
+"POT-Creation-Date: 2017-04-10 18:50-0600\n"
+"PO-Revision-Date: 2017-04-10 18:50-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: mro-class-schedule.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: mro-class-schedule.php:47
+msgid "Enter a new Class"
+msgstr ""
+
+#: mro-class-schedule.php:107 mro-class-schedule.php:108
+msgid "Class Schedule Settings"
+msgstr ""
+
+#: mro-class-schedule.php:118
+msgid "Save Schedule Settings"
+msgstr ""
+
+#: mro-class-schedule.php:123 mro-class-schedule.php:124
+msgid "Prices"
+msgstr ""
+
+#: mro-class-schedule.php:134
+msgid "Save Prices"
+msgstr ""
+
+#: mro-class-schedule.php:169
+#, php-format
+msgid "#%d (no title)"
+msgstr ""
+
+#: mro-class-schedule.php:177
+msgid "Other (enter manually)"
+msgstr ""
+
+#: parts/settings/prices-settings.php:12 parts/settings/prices-settings.php:43
+msgid "Sign-up Fee"
+msgstr ""
+
+#: parts/settings/prices-settings.php:13 parts/settings/prices-settings.php:44
+msgid "Description and price of signup fee"
+msgstr ""
+
+#: parts/settings/prices-settings.php:19 parts/settings/prices-settings.php:50
+#: parts/settings/prices-settings.php:87
+msgid "Description"
+msgstr ""
+
+#: parts/settings/prices-settings.php:25 parts/settings/prices-settings.php:56
+msgid "Price"
+msgstr ""
+
+#: parts/settings/prices-settings.php:28 parts/settings/prices-settings.php:59
+#: parts/settings/prices-settings.php:96 parts/settings/prices-settings.php:110
+#: parts/settings/prices-settings.php:124
+#: parts/settings/prices-settings.php:133
+msgid "10.000"
+msgstr ""
+
+#: parts/settings/prices-settings.php:74
+msgid "Monthly prices"
+msgstr ""
+
+#: parts/settings/prices-settings.php:75
+msgid "Add more for monthly options"
+msgstr ""
+
+#: parts/settings/prices-settings.php:81
+msgid "Title"
+msgstr ""
+
+#: parts/settings/prices-settings.php:93
+msgid "1 class per week"
+msgstr ""
+
+#: parts/settings/prices-settings.php:107
+msgid "2 classes per week"
+msgstr ""
+
+#: parts/settings/prices-settings.php:121
+msgid "3 classes per week"
+msgstr ""
+
+#: parts/settings/prices-settings.php:130
+msgid "Unlimited classes"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:64
+msgid "Choose type"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:67
+msgid "Class"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:68
+msgid "Event"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:69
+msgid "Manual entry"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:77
+msgid "Choose class"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:92
+#: parts/settings/schedule-settings.php:136
+msgid "Choose teacher"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:107
+msgid "Choose event"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:122
+msgid "Enter class/event name"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:152
+msgid "Teacher's name"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:172
+msgid "Time start"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:181
+msgid "Time end"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:199
+msgid "Monday blocks"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:200
+msgid "Create Monday blocks."
+msgstr ""
+
+#: parts/settings/schedule-settings.php:209
+msgid "Tuesday blocks"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:210
+msgid "Create Tuesday blocks."
+msgstr ""
+
+#: parts/settings/schedule-settings.php:219
+msgid "Wednesday blocks"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:220
+msgid "Create Wednesday blocks."
+msgstr ""
+
+#: parts/settings/schedule-settings.php:229
+msgid "Thursday blocks"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:230
+msgid "Create Thursday blocks."
+msgstr ""
+
+#: parts/settings/schedule-settings.php:239
+msgid "Friday blocks"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:240
+msgid "Create Friday blocks."
+msgstr ""
+
+#: parts/settings/schedule-settings.php:249
+msgid "Saturday blocks"
+msgstr ""
+
+#: parts/settings/schedule-settings.php:250
+msgid "Create Saturday blocks."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "MRo Class Schedule"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://URI_Of_Page_Describing_Plugin_and_Updates"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Sets up class custom post types and schedule for Yoga Mandir."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mat Rosero"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://2tabbies.com"
+msgstr ""
