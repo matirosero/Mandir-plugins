@@ -1,7 +1,7 @@
 <?php
 /*
 Title: Events
-Setting: my_theme_settings
+Setting: mro_frontpage_settings
 Order: 3
 */
 
@@ -31,25 +31,14 @@ function mro_home_get_events() {
   return $events;
 }
 
-  piklist('field', array(
-    'type' => 'select'
-    ,'field' => 'mro_multiselect'
-    ,'label' => __('Multiselect', 'piklist-demo')
-    ,'value' => 'third'
-    ,'choices' => mro_home_get_events()
-    ,'attributes' => array(
-      'multiple' => 'multiple' // This changes a select field into a multi-select field
-    )
-  ));
 
-
-
-  piklist('field', array(
-    'type' => 'text'
-    ,'field' => 'text'
-    ,'label' => __('Text', 'piklist-demo')
-    ,'help' => __('You can easily add tooltips to your fields with the help parameter.', 'piklist-demo')
-    ,'attributes' => array(
-      'class' => 'regular-text'
-    )
-  ));
+piklist('field', array(
+  'type' => 'select',
+  'field' => 'frontpage_events',
+  'label' => __('Multiselect', 'mro-frontpage'),
+  'value' => 'third',
+  'choices' => mro_home_get_events(),
+  'attributes' => array(
+    'multiple' => 'multiple', // This changes a select field into a multi-select field
+  ),
+));

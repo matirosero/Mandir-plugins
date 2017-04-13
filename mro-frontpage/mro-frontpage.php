@@ -34,16 +34,16 @@ add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
   {
      $pages[] = array(
       'page_title' => __('Home settings')
-      ,'menu_title' => __('Home settings', 'piklist')
+      ,'menu_title' => __('Home settings', 'mro-frontpage')
       // ,'sub_menu' => 'mro_frontpage_settings' //Under Appearance menu
       ,'capability' => 'manage_options'
       ,'menu_slug' => 'mro_frontpage_settings'
-      ,'setting' => 'my_theme_settings'
+      ,'setting' => 'mro_frontpage_settings'
       ,'menu_icon' => 'dashicons-admin-home'
       ,'page_icon' => 'dashicons-admin-home'
       ,'single_line' => true
       ,'default_tab' => 'Basic'
-      ,'save_text' => 'Save Home Settings',
+      ,'save_text' => __('Save Home Settings', 'mro-frontpage'),
       'position' => 4,
     );
 
