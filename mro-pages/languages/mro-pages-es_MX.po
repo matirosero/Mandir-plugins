@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MRo Mandir Pages\n"
-"POT-Creation-Date: 2017-06-05 15:19-0600\n"
-"PO-Revision-Date: 2017-06-05 15:20-0600\n"
+"POT-Creation-Date: 2017-06-05 16:27-0600\n"
+"PO-Revision-Date: 2017-06-05 16:29-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_MX\n"
@@ -20,6 +20,29 @@ msgstr ""
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: parts/meta-boxes/training-curriculum.php:15
+msgid "Curriculum"
+msgstr "Curriculum"
+
+#: parts/meta-boxes/training-curriculum.php:16
+#: parts/meta-boxes/training-enrolling.php:16
+#: parts/meta-boxes/training-information.php:60
+msgid "Each line will be a bullet point."
+msgstr "Cada línea será un bullet."
+
+#: parts/meta-boxes/training-curriculum.php:22
+msgid "Title"
+msgstr "Título"
+
+#: parts/meta-boxes/training-curriculum.php:28
+#: parts/meta-boxes/training-dates.php:121
+msgid "Time"
+msgstr "Hora"
+
+#: parts/meta-boxes/training-curriculum.php:34
+msgid "Description"
+msgstr "Descripción"
 
 #: parts/meta-boxes/training-dates.php:15
 msgid "Course dates"
@@ -97,9 +120,37 @@ msgstr "Orientación"
 msgid "Date"
 msgstr "Fecha"
 
-#: parts/meta-boxes/training-dates.php:121
-msgid "Time"
-msgstr "Hora"
+#: parts/meta-boxes/training-enrolling.php:15
+msgid "How to enroll"
+msgstr "Cómo matricular"
+
+#: parts/meta-boxes/training-information.php:16
+msgid "Introduction"
+msgstr "Introducción"
+
+#: parts/meta-boxes/training-information.php:18
+msgid "Basic information, goes under title."
+msgstr "Información básica, aparece por debajo de título."
+
+#: parts/meta-boxes/training-information.php:38
+msgid "Recommendations"
+msgstr "Recomendaciones"
+
+#: parts/meta-boxes/training-information.php:39
+msgid "One recommendation per line. Each line will be a bullet point."
+msgstr "Una recomendación por línea. Cada línea será un bullet."
+
+#: parts/meta-boxes/training-information.php:59
+msgid "Certification"
+msgstr "Reconociendo"
+
+#: parts/meta-boxes/training-information.php:80
+msgid "Teachers"
+msgstr "Profesorado"
+
+#: parts/meta-boxes/training-information.php:82
+msgid "Information about the teachers."
+msgstr "Información sobre los profesores."
 
 #. Plugin Name of the plugin/theme
 msgid "MRo Mandir Pages"
