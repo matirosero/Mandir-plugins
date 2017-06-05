@@ -7,3 +7,14 @@ Priority: high
 Order: 1
 Template: page-templates/template-training
 */
+
+  piklist('field', array(
+    'type' => 'radio',
+    'field' => 'mro_training_state',
+    'label' => __('Estado de matrícula', 'mro-pages'),
+    'value' => '0',
+    'choices' => array(
+      0 => __('Enrollment open', 'mro-pages'),
+      1 => __('Enrollment closed', 'mro-pages'),
+    ),
+  ));

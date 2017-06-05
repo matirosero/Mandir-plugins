@@ -13,7 +13,7 @@ Template: page-templates/template-training
     'type' => 'editor'
     ,'field' => 'post_content'
     ,'scope' => 'post'
-    ,'label' => __('Introduction', 'piklist-demo')
+    ,'label' => __('Introduction', 'mro-pages')
     // ,'add_more' => true
     ,'description' => __('Basic information, goes under title.')
     // ,'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
@@ -77,9 +77,9 @@ piklist('field', array(
   piklist('field', array(
     'type' => 'editor'
     ,'field' => 'mro_training_teachers'
-    ,'label' => __('Teachers', 'piklist-demo')
+    ,'label' => __('Teachers', 'mro-pages')
     // ,'add_more' => true
-    ,'description' => __('Information about the teachers.', 'piklist-demo')
+    ,'description' => __('Information about the teachers.', 'mro-pages')
     // ,'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     ,'options' => array(
       'media_buttons' => false
