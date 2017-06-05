@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MRo Mandir Pages\n"
+"POT-Creation-Date: 2017-06-05 15:19-0600\n"
+"PO-Revision-Date: 2017-06-05 15:20-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: mro-pages.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: parts/meta-boxes/training-dates.php:15
+msgid "Course dates"
+msgstr "Fechas del curso"
+
+#: parts/meta-boxes/training-dates.php:22
+msgid "Date start"
+msgstr "Fecha de inicio"
+
+#: parts/meta-boxes/training-dates.php:31
+msgid "Date end"
+msgstr "Fecha de fin"
+
+#: parts/meta-boxes/training-dates.php:43
+msgid "Mostrar únicamente meses"
+msgstr ""
+
+#: parts/meta-boxes/training-dates.php:44
+msgid "Mostrar fechas exactas"
+msgstr ""
+
+#: parts/meta-boxes/training-dates.php:53
+msgid "Schedule"
+msgstr "Horario"
+
+#: parts/meta-boxes/training-dates.php:61
+msgid "Time start"
+msgstr "Hora inicio"
+
+#: parts/meta-boxes/training-dates.php:67
+msgid "Time end"
+msgstr "Hora fin"
+
+#: parts/meta-boxes/training-dates.php:73
+msgid "Days"
+msgstr "Días"
+
+#: parts/meta-boxes/training-dates.php:78
+msgid "Monday"
+msgstr "Lunes"
+
+#: parts/meta-boxes/training-dates.php:79
+msgid "Tuesday"
+msgstr "Martes"
+
+#: parts/meta-boxes/training-dates.php:80
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#: parts/meta-boxes/training-dates.php:81
+msgid "Thursday"
+msgstr "Jueves"
+
+#: parts/meta-boxes/training-dates.php:82
+msgid "Friday"
+msgstr "Viernes"
+
+#: parts/meta-boxes/training-dates.php:83
+msgid "Saturday"
+msgstr "Sábado"
+
+#: parts/meta-boxes/training-dates.php:84
+msgid "Sunday"
+msgstr "Domingo"
+
+#: parts/meta-boxes/training-dates.php:90
+msgid "Weekend workshops"
+msgstr "Talleres de fin de semana"
+
+#: parts/meta-boxes/training-dates.php:105
+msgid "Orientation"
+msgstr "Orientación"
+
+#: parts/meta-boxes/training-dates.php:112
+msgid "Date"
+msgstr "Fecha"
+
+#: parts/meta-boxes/training-dates.php:121
+msgid "Time"
+msgstr "Hora"
+
+#. Plugin Name of the plugin/theme
+msgid "MRo Mandir Pages"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://URI_Of_Page_Describing_Plugin_and_Updates"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Sets up custom meta for assorted Yoga Mandir pages."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mat Rosero"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://2tabbies.com"
+msgstr ""
