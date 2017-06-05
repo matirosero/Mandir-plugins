@@ -9,8 +9,8 @@ Tab: Basic
 piklist('field', array(
   'type' => 'group',
   'field' => 'single_class', // Including a field at this level saves all data in a serialized array.
-  'label' => __('Sign-up Fee', 'mro-class-schedule'),
-  'description' => __('Description and price of signup fee', 'mro-class-schedule'),
+  'label' => __('Drop-in class', 'mro-class-schedule'),
+  'description' => __('Description and price of drop-in class', 'mro-class-schedule'),
   'add_more' => false,
   'fields' => array(
     array(

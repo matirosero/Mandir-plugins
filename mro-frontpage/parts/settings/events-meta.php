@@ -35,8 +35,8 @@ function mro_home_get_events() {
 piklist('field', array(
   'type' => 'select',
   'field' => 'frontpage_events',
-  'label' => __('Multiselect', 'mro-frontpage'),
-  'value' => 'third',
+  'label' => __('Select events to show', 'mro-frontpage'),
+  'value' => '',
   'choices' => mro_home_get_events(),
   'attributes' => array(
     'multiple' => 'multiple', // This changes a select field into a multi-select field

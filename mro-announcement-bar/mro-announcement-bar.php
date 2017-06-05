@@ -98,7 +98,7 @@ function sap_display_announcement() {
  
     if($announcements) :
         ?>
-        <div id="info-bar" class="hidden row">
+        <div id="info-bar" class="hidden expanded row column">
             <div class="wrapper">
                 <div class="sap_message">
                     <?php
