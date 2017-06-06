@@ -38,10 +38,10 @@ piklist('field', array(
       'type' => 'radio',
       'field' => 'mro_training_exact_dates',
       // 'label' => __('Fechas exactas', 'mro-pages'),
-      'value' => 2,
+      'value' => 1,
       'choices' => array(
-        1 => __('Mostrar únicamente meses', 'mro-pages'),
-        2 => __('Mostrar fechas exactas', 'mro-pages'),
+        0 => __('Mostrar únicamente meses', 'mro-pages'),
+        1 => __('Mostrar fechas exactas', 'mro-pages'),
       ),
     ),
   ),
@@ -75,18 +75,18 @@ piklist('field', array(
       // 'value' => 2,
       // 'list' => false,
       'choices' => array(
-        'Monday' => __('Monday', 'mro-pages'),
-        'Tuesday' => __('Tuesday', 'mro-pages'),
-        'Wednesday' => __('Wednesday', 'mro-pages'),
-        'Thursday' => __('Thursday', 'mro-pages'),
-        'Friday' => __('Friday', 'mro-pages'),
-        'Saturday' => __('Saturday', 'mro-pages'),
-        'Sunday' => __('Sunday', 'mro-pages'),
+        'lunes' => __('Monday', 'mro-pages'),
+        'martes' => __('Tuesday', 'mro-pages'),
+        'miércoles' => __('Wednesday', 'mro-pages'),
+        'jueves' => __('Thursday', 'mro-pages'),
+        'viernes' => __('Friday', 'mro-pages'),
+        'sábado' => __('Saturday', 'mro-pages'),
+        'domingo' => __('Sunday', 'mro-pages'),
       ),
     ),
     array(
       'type' => 'textarea',
-      'field' => 'mro_training_schedule_extra',
+      'field' => 'mro_training_workshops',
       'label' => __('Weekend workshops', 'mro-pages'),
       // 'description' => 'class="large-text code" rows="10" columns="50"',
       // ,'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
@@ -106,6 +106,7 @@ piklist('field', array(
   // 'description' => __('Add as many dates as needed.', 'mro-pages'),
   'add_more' => false,
   'fields' => array(
+
     array(
       'type' => 'datepicker',
       'field' => 'mro_training_orientation_date',
@@ -120,6 +121,15 @@ piklist('field', array(
       'field' => 'mro_training_orientation_time',
       'label' => __('Time', 'mro-pages'),
       'columns' => 6,
+    ),
+    array(
+      'type' => 'checkbox',
+      'field' => 'mro_training_show_orientation',
+      // 'label' => __('Fechas exactas', 'mro-pages'),
+      // 'value' => 0,
+      'choices' => array(
+        1 => __('Mostrar orientación', 'mro-pages'),
+      ),
     ),
   ),
 ));
