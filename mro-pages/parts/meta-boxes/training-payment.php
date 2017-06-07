@@ -18,16 +18,18 @@ piklist('field', array(
   'add_more' => false,
   'fields' => array (
     array (
-      'type' => 'number',
+      'type' => 'text',
       'field' => 'price',
       'label' => __('Reserve amount', 'mro-events'),
       // 'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-events'),
       'attributes' => array(
-				'placeholder'		=> 100,
-				// 'pattern'		=> '[0-9]+([\,|\.][0-9]+)?',
-				'step'			=> 50,
-				'min'			=> 50,
-       ),
+        'placeholder' => __('500', 'mro-pages'),
+        ),
+      'validate' => array(
+        array(
+          'type' => 'valid_number'
+        )
+      ),
       'columns' => 6,
     ),
     array (
@@ -53,27 +55,31 @@ piklist('field', array(
   'add_more' => true,
   'fields' => array (
     array (
-      'type' => 'number',
-      'field' => 'price',
+      'type' => 'text',
+      'field' => 'payments',
       'label' => __('Payments', 'mro-events'),
-			'attributes'=> array(
-				'placeholder'		=> 1,
-				// 'pattern'		=> '[0-9]+([\,|\.][0-9]+)?',
-				'step'			=> 1,
-				'min'			=> 1,
-			),
+      'attributes' => array(
+        'placeholder' => __('1', 'mro-pages'),
+        ),
+      'validate' => array(
+        array(
+          'type' => 'valid_number'
+        )
+      ),
       'columns' => 6,
     ),
     array (
-      'type' => 'number',
+      'type' => 'text',
       'field' => 'discount',
       'label' => __('Discount amount', 'mro-events'),
-			'attributes'=> array(
-				// 'placeholder'		=> 1,
-				// 'pattern'		=> '[0-9]+([\,|\.][0-9]+)?',
-				// 'step'			=> 50,
-				// 'min'			=> 0,
-			),
+      'attributes' => array(
+        'placeholder' => __('100', 'mro-pages'),
+        ),
+      'validate' => array(
+        array(
+          'type' => 'valid_number'
+        )
+      ),
       'columns' => 6,
     ),
     array (

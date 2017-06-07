@@ -22,17 +22,18 @@ piklist('field', array(
       'columns' => 12,
     ),
     array(
-      'type' => 'number',
+      'type' => 'text',
       'field' => 'price',
       'label' => __('Price', 'mro-pages'),
       'columns' => 12,
-      'attributes'=> array(
-        // 'placeholder'    => 1,
-        // 'pattern'    => '[0-9]+([\,|\.][0-9]+)?',
-        'step'      => 50,
-        'min'      => 0,
+      'attributes' => array(
+        'placeholder' => __('100', 'mro-pages'),
+        ),
+      'validate' => array(
+        array(
+          'type' => 'valid_number'
+        )
       ),
-
     ),
     array(
       'type' => 'textarea',
