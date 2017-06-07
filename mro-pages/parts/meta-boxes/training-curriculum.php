@@ -25,7 +25,7 @@ piklist('field', array(
     array(
       'type' => 'text',
       'field' => 'length',
-      'label' => __('Time', 'mro-pages'),
+      'label' => __('Training hours', 'mro-pages'),
       'columns' => 6,
     ),
     array(

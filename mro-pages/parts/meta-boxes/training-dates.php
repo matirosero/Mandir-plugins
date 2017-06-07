@@ -4,7 +4,7 @@ Title: Fechas y horario próximo entrenamiento
 Post Type: page
 Context: normal
 Priority: high
-Order: 2
+Order: 1
 Template: page-templates/template-training
 */
 
@@ -47,6 +47,7 @@ piklist('field', array(
   ),
 ));
 
+/*
 // Repeater: date with time start and end. 
 piklist('field', array(
   'type' => 'group',
@@ -98,6 +99,7 @@ piklist('field', array(
     ),
   ),
 ));
+*/
 
 // Orientación. 
 piklist('field', array(
