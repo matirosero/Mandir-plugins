@@ -76,23 +76,67 @@ piklist('field', array(
 ));
 
 
-  piklist('field', array(
-    'type' => 'editor'
-    ,'field' => 'mro_training_teachers'
-    ,'label' => __('Teachers', 'mro-pages')
-    // ,'add_more' => true
-    ,'description' => __('Information about the teachers.', 'mro-pages')
-    // ,'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    ,'options' => array(
-      'media_buttons' => false
-      ,'teeny' => true
-      ,'textarea_rows' => 5
-      ,'drag_drop_upload' => false
-      ,'tinymce' => array(
-        'resize' => false
-        ,'wp_autoresize_on' => true
-      )
-    )
-  ));
+// Repeater: date with time start and end. 
+piklist('field', array(
+  'type' => 'group',
+  // 'field' => 'mro_training_teachers', // Including a field at this level saves all data in a serialized array.
+  'label' => __('Teachers', 'mro-pages'),
+  // 'description' => __('Each line will be a bullet point.', 'mro-pages'),
+  'add_more' => false,
+  'fields' => array(
+    array(
+      'type' => 'editor',
+      'field' => 'mro_training_teachers',
+      'label' => __('Teachers', 'mro-pages'),
+      'description' => __('Information about the teachers.', 'mro-pages'),
+      'options' => array(
+        'media_buttons' => false,
+        'teeny' => true,
+        'textarea_rows' => 5,
+        'drag_drop_upload' => false,
+        'tinymce' => array(
+          'resize' => false,
+          'wp_autoresize_on' => true,
+        ),
+      ),
+    ),
+    array(
+      'type' => 'file',
+      'field' => 'mro_training_teachers_image',
+      'scope' => 'post_meta',
+      'label' => __('Media Uploader', 'piklist-demo'),
+      'options' => array(
+        'modal_title' => __('Add File(s)', 'piklist-demo'),
+        'button' => __('Add', 'piklist-demo'),
+      ),
+    ),    
+  ),
+));
 
+  // piklist('field', array(
+  //   'type' => 'editor',
+  //   'field' => 'mro_training_teachers',
+  //   'label' => __('Teachers', 'mro-pages'),
+  //   'description' => __('Information about the teachers.', 'mro-pages'),
+  //   'options' => array(
+  //     'media_buttons' => false,
+  //     'teeny' => true,
+  //     'textarea_rows' => 5,
+  //     'drag_drop_upload' => false,
+  //     'tinymce' => array(
+  //       'resize' => false,
+  //       'wp_autoresize_on' => true,
+  //     ),
+  //   )
+  // ));
 
+  // piklist('field', array(
+  //   'type' => 'file'
+  //   ,'field' => 'upload_media'
+  //   ,'scope' => 'post_meta'
+  //   ,'label' => __('Media Uploader', 'piklist-demo')
+  //   ,'options' => array(
+  //     'modal_title' => __('Add File(s)', 'piklist-demo')
+  //     ,'button' => __('Add', 'piklist-demo')
+  //   )
+  // ));
