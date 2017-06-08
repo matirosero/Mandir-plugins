@@ -25,7 +25,7 @@ add_action( 'plugins_loaded', 'mro_pages_load_plugin_textdomain' );
 add_action( 'admin_head', 'mro_pages_hide_editor' );
 function mro_pages_hide_editor() {
 	$template_file = $template_file = basename( get_page_template() );
-	if($template_file == 'template-training.php'){ // template
+	if($template_file == 'template-training.php' || $template_file == 'template-store.php'){ // template
 		remove_post_type_support('page', 'editor');
 	}
 }
