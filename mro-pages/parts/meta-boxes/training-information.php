@@ -104,10 +104,9 @@ piklist('field', array(
       'type' => 'file',
       'field' => 'mro_training_teachers_image',
       'scope' => 'post_meta',
-      'label' => __('Media Uploader', 'piklist-demo'),
-      'options' => array(
-        'modal_title' => __('Add File(s)', 'piklist-demo'),
-        'button' => __('Add', 'piklist-demo'),
+      'label' => __('Image to show in this section', 'piklist-demo'),
+      'attributes' => array(
+        'data-multiple' => false,
       ),
     ),    
   ),

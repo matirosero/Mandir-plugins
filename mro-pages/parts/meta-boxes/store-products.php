@@ -13,7 +13,7 @@ Template: page-templates/template-store
     'type' => 'group',
     'field' => 'mro_store_products',
     'add_more' => true,
-    'label' => __('Other productos', 'mro-pages'),
+    'label' => __('Other products', 'mro-pages'),
     'description' => __('Add the information and images for products.', 'mro-pages'),
     'fields'  => array(
       array(
@@ -37,6 +37,21 @@ Template: page-templates/template-store
             'wp_autoresize_on' => true,
           ),
         ),
+      ),
+      array (
+        'type' => 'text',
+        'field' => 'price',
+        'label' => __('Price (colones)', 'mro-events'),
+        // 'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-events'),
+        'attributes' => array(
+          'placeholder' => __('500', 'mro-pages'),
+          ),
+        'validate' => array(
+          array(
+            'type' => 'valid_number'
+          )
+        ),
+        'columns' => 6,
       ),
       array(
         'type' => 'file',
