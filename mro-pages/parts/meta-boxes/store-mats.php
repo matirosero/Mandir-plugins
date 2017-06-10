@@ -8,6 +8,23 @@ Order: 1
 Template: page-templates/template-store
 */
 
+function mro_store_supages() {
+  global $post;
+  // Build classes array
+  $pages = get_posts(
+    array(
+      'post_type' => 'page',
+      'numberposts' => -1,
+      'orderby' => 'title',
+      'order' => 'ASC',
+      'post_parent' => $post->ID,
+    ), 'objects');
+
+  $pages = piklist($pages, array('ID', 'post_title'));
+  $pages = mro_pages_build_choices($pages);
+
+  return $pages;
+}
 
   piklist('field', array(
     'type' => 'group',
@@ -52,18 +69,7 @@ Template: page-templates/template-store
         'type' => 'radio',
         'field' => '_' . piklist::$prefix . 'relate_post',
         'label' => __('Product page', 'mro-pages'),
-        'choices' => piklist(
-          get_posts(
-            array(
-              'post_type' => 'page',
-              'numberposts' => -1,
-              'orderby' => 'title',
-              'order' => 'ASC',
-              'post_parent' => $post->ID,
-            )
-          ),
-          array('ID', 'post_title')
-        ),
+        'choices' => mro_store_supages(),
         'relate' => array(
           'scope' => 'post',
         ),

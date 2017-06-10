@@ -43,3 +43,16 @@ if ( ! has_filter( 'piklist_validation_rules', 'check_valid_number' ) ) {
 	  return $validation_rules;
 	}
 }
+
+// Return an array formatted for select field
+function mro_pages_build_choices($choices) {
+	foreach ($choices as $value => $choice):
+		if ($choice === ''):
+			$choices[$value] = sprintf(__('#%d (no title)'), $value);
+		endif;
+	endforeach;
+
+	$choices = array_replace(array('' => '&mdash; Select &mdash;'), $choices);
+
+	return $choices;
+}
