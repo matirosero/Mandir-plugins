@@ -12,10 +12,25 @@ Template: page-templates/template-featured-product
 
   piklist('field', array(
     'type' => 'group',
-    'field' => 'mro_mats_bulk',
-    'label' => __('Bulk price', 'piklist-demo'),
+    'field' => 'mro_product_bulk',
+    'label' => __('Bulk pricing', 'piklist-demo'),
     'add_more' => false,
     'fields' => array(
+      array(
+        'type' => 'editor',
+        'field' => 'info',
+        'label' => __('Information', 'mro-pages'),
+        'options' => array(
+          'media_buttons' => true,
+          'teeny' => true,
+          'textarea_rows' => 5,
+          'drag_drop_upload' => false,
+          'tinymce' => array(
+            'resize' => false,
+            'wp_autoresize_on' => true,
+          ),
+        ),
+      ),
       array(
         'type' => 'radio',
         'field' => 'currency',
