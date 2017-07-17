@@ -20,29 +20,48 @@ define('SIMPLE_ANNOUNCEMENTS_PATH', plugin_dir_url( __FILE__ ));
  */
 add_filter('piklist_post_types', 'mro_announcement_bar_post_types');
 function mro_announcement_bar_post_types($post_types) {
+
+    $labels = array(
+      'name' => _x( 'Announcements', 'post type general name', 'mro-events' ),
+      'singular_name' => _x( 'Announcement', 'post type singular name', 'mro-events' ),
+      'menu_name' => _x( 'Announcements', 'admin menu', 'mro-events' ),
+      'name_admin_bar' => _x( 'Announcements', 'add new on admin bar', 'mro-events' ),
+      'add_new' => _x( 'Add New', 'book', 'mro-events' ),
+      'add_new_item' => __( 'Add New Announcement', 'mro-events' ),
+      'new_item' => __( 'New Announcement', 'mro-events' ),
+      'edit_item' => __( 'Edit Announcement', 'mro-events' ),
+      'view_item' => __( 'View Announcement', 'mro-events' ),
+      'all_items' => __( 'All Announcements', 'mro-events' ),
+      'search_items' => __( 'Search Announcements', 'mro-events' ),
+      'parent_item_colon' => __( 'Parent Announcements:', 'mro-events' ),
+      'not_found' => __( 'No Announcements found.', 'mro-events' ),
+      'not_found_in_trash' => __( 'No Announcements found in Trash.', 'mro-events' ),
+    );
+
   $post_types['mro-announcement'] = array(
-    'labels' => piklist('post_type_labels', 'Announcement')
-    ,'title' => __('Enter a new Annoucement')
-    ,'menu_position' => 5
-    ,'menu_icon' => 'dashicons-megaphone'
-    ,'page_icon' => 'dashicons-megaphone'
-    ,'supports' => array(
-      'title'
+    // 'labels' => piklist('post_type_labels', 'Announcement')
+    'labels' => $labels,
+    'title' => __('Enter a new Annoucement'),
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-megaphone',
+    'page_icon' => 'dashicons-megaphone',
+    'supports' => array(
+      'title',
       // ,'editor'
       // ,'excerpt'
-    )
-    ,'public' => true
-    ,'admin_body_class' => array(
-      'mro-announcement'
-    )
-    ,'has_archive' => false
-    ,'rewrite' => array(
-      'slug' => 'annoucement'
-    )
-    ,'capability_type' => 'post'
-    ,'hide_meta_box' => array(
-      'slug'
-      ,'author'
+    ),
+    'public' => true,
+    'admin_body_class' => array(
+      'mro-announcement',
+    ),
+    'has_archive' => false,
+    'rewrite' => array(
+      'slug' => 'annoucement',
+    ),
+    'capability_type' => 'post',
+    'hide_meta_box' => array(
+      'slug',
+      'author'
     )
   );
 

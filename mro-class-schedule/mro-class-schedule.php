@@ -20,30 +20,30 @@ function mro_class_schedule_load_plugin_textdomain() {
 add_action( 'plugins_loaded', 'mro_class_schedule_load_plugin_textdomain' );
 
 
-// Events post type
+// Classes post type
 add_filter('piklist_post_types', 'mro_class_schedule_post_types');
 function mro_class_schedule_post_types($post_types) {
 
-	// $labels = array(
-	//   'name' => _x( 'Events', 'post type general name', 'mro-events' ),
-	//   'singular_name' => _x( 'Event', 'post type singular name', 'mro-events' ),
-	//   'menu_name' => _x( 'Events', 'admin menu', 'mro-events' ),
-	//   'name_admin_bar' => _x( 'Events', 'add new on admin bar', 'mro-events' ),
-	//   'add_new' => _x( 'Add New', 'book', 'mro-events' ),
-	//   'add_new_item' => __( 'Add New Event', 'mro-events' ),
-	//   'new_item' => __( 'New Event', 'mro-events' ),
-	//   'edit_item' => __( 'Edit Event', 'mro-events' ),
-	//   'view_item' => __( 'View Event', 'mro-events' ),
-	//   'all_items' => __( 'All Events', 'mro-events' ),
-	//   'search_items' => __( 'Search Events', 'mro-events' ),
-	//   'parent_item_colon' => __( 'Parent Events:', 'mro-events' ),
-	//   'not_found' => __( 'No Events found.', 'mro-events' ),
-	//   'not_found_in_trash' => __( 'No Events found in Trash.', 'mro-events' ),
-	// );
+	$labels = array(
+	  'name' => _x( 'Classes', 'post type general name', 'mro-events' ),
+	  'singular_name' => _x( 'Class', 'post type singular name', 'mro-events' ),
+	  'menu_name' => _x( 'Classes', 'admin menu', 'mro-events' ),
+	  'name_admin_bar' => _x( 'Classes', 'add new on admin bar', 'mro-events' ),
+	  'add_new' => _x( 'Add New', 'book', 'mro-events' ),
+	  'add_new_item' => __( 'Add New Class', 'mro-events' ),
+	  'new_item' => __( 'New Class', 'mro-events' ),
+	  'edit_item' => __( 'Edit Class', 'mro-events' ),
+	  'view_item' => __( 'View Class', 'mro-events' ),
+	  'all_items' => __( 'All Classes', 'mro-events' ),
+	  'search_items' => __( 'Search Classes', 'mro-events' ),
+	  'parent_item_colon' => __( 'Parent Classes:', 'mro-events' ),
+	  'not_found' => __( 'No Classes found.', 'mro-events' ),
+	  'not_found_in_trash' => __( 'No Classes found in Trash.', 'mro-events' ),
+	);
 
 	$post_types['mro-class'] = array(
-	  // 'labels' => $labels,
-	  'labels' => piklist('post_type_labels', 'Clase'),
+	  'labels' => $labels,
+	  // 'labels' => piklist('post_type_labels', 'Clase'),
 	  'title' => __('Enter a new Class', 'mro-class-schedule'),
 	  'menu_position' => 20,
 	  'menu_icon' => 'dashicons-clock',
