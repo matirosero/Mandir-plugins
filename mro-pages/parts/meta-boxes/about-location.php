@@ -11,7 +11,7 @@ Template: page-templates/template-about-us
   piklist('field', array(
     'type' => 'group',
     // 'field' => 'mro_about_us_info',
-    'template'=>'field',
+    // 'template'=>'field',
     'add_more' => false,
     'label' => __('Location', 'mro-pages'),
     // 'description' => __('Add the information and images for the featured product.', 'mro-pages'),
@@ -19,25 +19,25 @@ Template: page-templates/template-about-us
       array(
         'type' => 'text',
         'field' => 'mro_about_map_shortcode',
-        'label' => __('Map shortcode', 'piklist-demo'),
+        'label' => __('Map shortcode', 'mro-pages'),
         'columns' => 12,
       ),
       array(
         'type' => 'group',
         'field' => 'mro_about_locations',
-        'label' => __('Location', 'piklist-demo'),
+        'label' => __('Location', 'mro-pages'),
         'add_more' => true,
         'fields' => array(
           array(
             'type' => 'text',
             'field' => 'name',
-            'label' => __('Name', 'piklist-demo'),
+            'label' => __('Name', 'mro-pages'),
             'columns' => 12,
           ),
           array(
             'type' => 'textarea',
             'field' => 'address',
-            'label' => __('Address', 'piklist-demo'),
+            'label' => __('Address', 'mro-pages'),
             'columns' => 12,
             'attributes' => array(
               'rows' => 5,
@@ -46,7 +46,7 @@ Template: page-templates/template-about-us
           array(
             'type' => 'text',
             'field' => 'tel',
-            'label' => __('Telephone', 'piklist-demo'),
+            'label' => __('Telephone', 'mro-pages'),
             'columns' => 2,
           ),
         ),

@@ -18,8 +18,8 @@ Template: page-templates/template-about-us
     'fields'  => array(
       array(
         'type' => 'file',
-        'field' => 'image',
-        'label' => __('Image', 'mro_about_secondary_image'),
+        'field' => 'mro_about_secondary_image',
+        'label' => __('Image', 'mro-pages'),
         'description' => __('Upload only ONE image, only one will be used on page.', 'mro-pages'),
         'columns' => 12,
         'options' => array(
