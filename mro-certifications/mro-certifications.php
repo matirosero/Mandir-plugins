@@ -8,7 +8,7 @@ Author: Mat Rosero
 Author URI: http://2tabbies.com
 Plugin Type: Piklist
 License: GPL2
-Text Domain: mro-events
+Text Domain: mro-cert
 Domain Path: /languages
 */
 
@@ -60,7 +60,7 @@ function mro_cert_post_types($post_types) {
 	  ),
 	  'has_archive' => false,
 	  'rewrite' => array(
-	    'slug' => 'evento',
+	    'slug' => 'certificaciones',
 	  ),
 	  'capability_type' => 'post',
 
