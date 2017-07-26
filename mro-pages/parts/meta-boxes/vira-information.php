@@ -13,6 +13,7 @@ mro_the_content();
 
 training_recs();
 
-training_includes()
+training_includes();
 
 training_teachers();
+
