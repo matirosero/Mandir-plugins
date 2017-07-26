@@ -19,6 +19,9 @@ function mro_pages_load_plugin_textdomain() {
 }
 add_action( 'plugins_loaded', 'mro_pages_load_plugin_textdomain' );
 
+foreach ( glob( plugin_dir_path( __FILE__ ) . "inc/*.php" ) as $file ) {
+    include_once $file;
+}
 
 //hide editor
 // https://gist.github.com/ramseyp/4060095
@@ -137,3 +140,4 @@ function mro_intro_after_title() {
 }
 add_action('edit_form_after_title', 'mro_intro_after_title');
 */
+
