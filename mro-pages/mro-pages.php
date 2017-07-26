@@ -62,7 +62,12 @@ function mro_pages_build_choices($choices) {
  * Hide the main editor on specific pages
  */
 define('EDITOR_HIDE_PAGE_TITLES', json_encode(array()));
-define('EDITOR_HIDE_PAGE_TEMPLATES', json_encode(array('page-templates/template-about-us.php')));
+define('EDITOR_HIDE_PAGE_TEMPLATES', json_encode(
+	array(
+		'page-templates/template-about-us.php',
+		'page-templates/template-events.php',
+		'page-templates/template-schedule.php',
+	)));
 
 
 /**
@@ -104,3 +109,25 @@ function atz_hide_editor() {
 }
 add_action('admin_init', 'atz_hide_editor');
 
+
+function mro_page_intro() {
+	piklist('field',
+	  array(
+	    'type' => 'editor',
+	    'field' => 'mro_page_intro',
+	    'template'=>'field',
+	    'label' => __('Introduction', 'mro-pages'),
+	    'options' => array(
+	      'wpautop' => true,
+	      'media_buttons' => false,
+	      'teeny' => false,
+	      'textarea_rows' => 5,
+	      'drag_drop_upload' => false,
+	      'tinymce' => array(
+	        'resize' => false,
+	        'wp_autoresize_on' => true,
+	      ),
+	      'editor_height' => 100,
+	    ),
+	));
+}

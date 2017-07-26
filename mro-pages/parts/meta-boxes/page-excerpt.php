@@ -5,8 +5,18 @@ Post Type: page
 Context: normal
 Priority: high
 Order: 0
-Template: page-templates/template-about-us
 */
+
+// piklist('field', array(
+//   'type' => 'editor',
+//   'scope' => 'post',
+//   'template' => 'field',
+//   'field' => 'post_excerpt',
+//   'options' => array (
+//    'media_buttons' => false,
+//    'teeny' => false,
+//   ),
+// ));
 
 
 piklist('field',
@@ -14,7 +24,7 @@ piklist('field',
     'type' => 'editor',
     'field' => 'mro_page_intro',
     'template'=>'field',
-    'label' => __('Introducción', 'mro-pages'),
+    'label' => __('Introduction', 'mro-pages'),
     'options' => array(
       'wpautop' => true,
       'media_buttons' => false,
@@ -28,5 +38,3 @@ piklist('field',
       'editor_height' => 100,
     ),
 ));
-
-

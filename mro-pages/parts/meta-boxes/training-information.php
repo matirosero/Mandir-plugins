@@ -13,7 +13,7 @@ Template: page-templates/template-training
     'type' => 'editor'
     ,'field' => 'post_content'
     ,'scope' => 'post'
-    ,'label' => __('Introduction', 'mro-pages')
+    ,'label' => __('General Information', 'mro-pages')
     // ,'add_more' => true
     ,'description' => __('Basic information, goes under title.')
     // ,'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
