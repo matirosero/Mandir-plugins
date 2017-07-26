@@ -19,6 +19,8 @@ function mro_pages_load_plugin_textdomain() {
 }
 add_action( 'plugins_loaded', 'mro_pages_load_plugin_textdomain' );
 
+
+//Include files
 foreach ( glob( plugin_dir_path( __FILE__ ) . "inc/*.php" ) as $file ) {
     include_once $file;
 }
@@ -26,31 +28,7 @@ foreach ( glob( plugin_dir_path( __FILE__ ) . "inc/*.php" ) as $file ) {
 
 
 
-// Validation for number
-if ( ! has_filter( 'piklist_validation_rules', 'check_valid_number' ) ) {
-	add_filter('piklist_validation_rules', 'check_valid_number', 11);
-	function check_valid_number($validation_rules) {
-	  $validation_rules['valid_number'] = array(
-	    'rule' => "/[-+]?[0-9]*[.,]?[0-9]+/",
-	    'message' => __('is not a number', 'mro-events')
-	  );
 
-	  return $validation_rules;
-	}
-}
-
-// Return an array formatted for select field
-function mro_pages_build_choices($choices) {
-	foreach ($choices as $value => $choice):
-		if ($choice === ''):
-			$choices[$value] = sprintf(__('#%d (no title)'), $value);
-		endif;
-	endforeach;
-
-	$choices = array_replace(array('' => '&mdash; Select &mdash;'), $choices);
-
-	return $choices;
-}
 
 
 

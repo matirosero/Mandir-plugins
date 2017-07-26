@@ -1,5 +1,19 @@
 <?php
 
+// Return an array formatted for select field
+function mro_pages_build_choices($choices) {
+	foreach ($choices as $value => $choice):
+		if ($choice === ''):
+			$choices[$value] = sprintf(__('#%d (no title)'), $value);
+		endif;
+	endforeach;
+
+	$choices = array_replace(array('' => '&mdash; Select &mdash;'), $choices);
+
+	return $choices;
+}
+
+
 //hide editor
 // https://gist.github.com/ramseyp/4060095
 // add_action( 'admin_head', 'mro_pages_hide_editor' );
