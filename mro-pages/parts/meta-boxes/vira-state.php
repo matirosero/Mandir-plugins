@@ -5,7 +5,7 @@ Post Type: page
 Context: normal
 Priority: high
 Order: 0
-Template: page-templates/template-training
+Template: page-templates/template-certification
 */
 
 training_state();

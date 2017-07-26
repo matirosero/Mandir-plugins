@@ -19,7 +19,7 @@ define('EDITOR_HIDE_PAGE_TEMPLATES', json_encode(
 		'page-templates/template-about-us.php',
 		'page-templates/template-events.php',
 		'page-templates/template-schedule.php',
-		'page-templates/template-vira.php',
+		'page-templates/template-certification.php',
 		'page-templates/template-training.php',
 		'page-templates/template-store.php',
 	)));

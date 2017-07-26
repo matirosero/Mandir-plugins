@@ -16,3 +16,5 @@ training_recs();
 training_diploma();
 
 training_teachers();
+
+training_enroll();
