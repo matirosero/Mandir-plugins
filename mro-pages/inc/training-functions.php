@@ -116,11 +116,11 @@ function training_recs() {
 }
 
 //Course includes
-function training_includes() {
+function training_includes($label = 'Incluye') {
 	piklist('field', array(
 	  'type' => 'group',
 	  'field' => 'mro_training_includes', // Including a field at this level saves all data in a serialized array.
-	  'label' => __('Includes', 'mro-pages'),
+	  'label' => $label,
 	  'description' => __('Each line will be a bullet point.', 'mro-pages'),
 	  'add_more' => true,
 	  'fields' => array(
@@ -279,6 +279,38 @@ function training_schedule_simple() {
 }
 
 
+//Daily Schedule
+function training_schedule_daily() {
+	piklist('field', array(
+	  'type' => 'group',
+	  'field' => 'mro_training_daily_schedule', // Use _types as base.
+	  'label' => __('Schedule', 'mro-pages'),
+	  // 'description' => __('Each line will be a bullet point.', 'mro-pages'),
+	  'add_more' => true,
+	  'fields' => array(
+	    array(
+	      'type' => 'time',
+	      'field' => 'time_start',
+	      'label' => __('Time start', 'mro-pages'),
+	      'columns' => 6,
+	    ),
+	    array(
+	      'type' => 'time',
+	      'field' => 'time_end',
+	      'label' => __('Time end', 'mro-pages'),
+	      'columns' => 6,
+	    ),
+	    array(
+	      'type' => 'text',
+	      'field' => 'description',
+	      'label' => __('Description', 'mro-pages'),
+	      'columns' => 12,
+	    ),
+	  ),
+	));
+}
+
+
 //Calendar
 function training_calendar() {
 	piklist('field', array(
@@ -322,7 +354,7 @@ function training_calendar() {
 
 //Pricing
 function training_pricing() {
-	
+
 	//USE EVENTS AS BASE
 
 	// Select currency symbol
@@ -414,11 +446,11 @@ function training_pricing() {
 
 
 //Duration
-function training_duration() {
+function training_duration($label = 'Duración') {
 	piklist('field', array(
 	  'type' => 'textarea',
 	  'field' => 'mro_training_duration',
-	  'label' => __('Duration', 'mro-pages'),
+	  'label' => $label,
 	  'attributes' => array(
 	    'class' => 'large-text',
 	    "maxlength"  => '180',

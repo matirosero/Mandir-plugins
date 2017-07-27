@@ -35,6 +35,7 @@ define('EDITOR_HIDE_PAGE_TEMPLATES', json_encode(
 		'page-templates/template-schedule.php',
 		'page-templates/template-certification.php',
 		'page-templates/template-training.php',
+		'page-templates/template-thai.php',
 		'page-templates/template-store.php',
 	)));
 

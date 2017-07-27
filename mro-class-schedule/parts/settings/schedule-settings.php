@@ -85,7 +85,7 @@ function mro_schedule_fields_array($group) {
       ),
     ),
 
-    //Select class
+    //Select teacher
     array(
       'type' => 'select',
       'field' => 'class_teacher_id',

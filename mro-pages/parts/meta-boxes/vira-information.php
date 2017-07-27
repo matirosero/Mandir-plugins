@@ -4,7 +4,7 @@ Title: Información
 Post Type: page
 Context: normal
 Priority: high
-Order: 2
+Order: 3
 Template: page-templates/template-certification
 */
 
