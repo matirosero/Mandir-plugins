@@ -11,6 +11,8 @@ Template: page-templates/template-thai
 
 mro_the_content();
 
+training_pricing();
+
 // training_includes();
 
 // training_diploma();

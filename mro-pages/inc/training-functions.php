@@ -1,5 +1,6 @@
 <?php
 
+
 //Open or closed
 function training_state() {
   piklist('field', array(
@@ -13,7 +14,6 @@ function training_state() {
     ),
   ));
 }
-
 
 //Certification dates
 function training_dates() {
@@ -161,7 +161,6 @@ function training_diploma() {
 	));
 }
 
-
 //Certification teachers
 function training_teachers() {
 	piklist('field', array(
@@ -223,7 +222,6 @@ function training_enroll() {
 	));
 }
 
-
 //Schedule
 function training_schedule_simple() {
 	piklist('field', array(
@@ -278,14 +276,49 @@ function training_schedule_simple() {
 	));
 }
 
+//Daily Schedule
+function training_schedule_detailed() {
+	piklist('field', array(
+
+		'type' => 'group',
+		'field' => 'mro_training_schedule', // Use _types as base.
+		'label' => __('Schedule', 'mro-pages'),
+		'add_more' => false,
+		'fields' => array(
+
+			array(
+		      'type' => 'text',
+		      'field' => 'days',
+		      'label' => __('Days', 'mro-pages'),
+		      'columns' => 12,
+		      // 'value' => 2,
+		      // 'list' => false,
+		    ),
+		    array(
+		      'type' => 'textarea',
+		      'field' => 'notes',
+		      'label' => __('Additional notes', 'mro-pages'),
+		      // 'description' => 'class="large-text code" rows="10" columns="50"',
+		      // ,'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+		      'attributes' => array(
+		        'rows' => 5,
+		        'cols' => 50,
+		        'class' => 'large-text',
+		      ),
+		    ),
+
+		),
+
+	));
+}
 
 //Daily Schedule
 function training_schedule_daily() {
 	piklist('field', array(
+
 	  'type' => 'group',
 	  'field' => 'mro_training_daily_schedule', // Use _types as base.
-	  'label' => __('Schedule', 'mro-pages'),
-	  // 'description' => __('Each line will be a bullet point.', 'mro-pages'),
+	  'label' => __('Daily schedule', 'mro-pages'),
 	  'add_more' => true,
 	  'fields' => array(
 	    array(
@@ -307,9 +340,9 @@ function training_schedule_daily() {
 	      'columns' => 12,
 	    ),
 	  ),
+
 	));
 }
-
 
 //Calendar
 function training_calendar() {
@@ -351,7 +384,6 @@ function training_calendar() {
 	));
 }
 
-
 //Pricing
 function training_pricing() {
 
@@ -371,26 +403,7 @@ function training_pricing() {
 	));
 
 
-	// Regular price
-	piklist('field', array(
-	  'type' => 'text',
-	  'field' => 'mro_training_price',
-	  'label' => __('Regular price', 'mro-pages'),
-	  'description' => __('Must be a number.', 'mro-pages'),
-	  'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-pages'),
-	  'attributes' => array(
-	    // 'class' => 'regular-text',
-	    'placeholder' => __('100', 'mro-pages'),
-	    ),
-	  'validate' => array(
-	    array(
-	      'type' => 'valid_number'
-	    )
-	  ),
-	));
-
-
-	// Other pricing options
+	// Pricing options
 	piklist('field', array(
 	  'type' => 'group',
 	  'field' => 'mro_training_pricing_options',
@@ -431,19 +444,23 @@ function training_pricing() {
 
 	//Pricing notes
 	piklist('field', array(
-	  'type' => 'textarea',
-	  'field' => 'mro_training_pricing_notes',
-	  'label' => __('Pricing notes', 'mro-pages'),
-	  'description' => __('Further explanation needed to clarify pricing.', 'mro-pages'),
-	  'help' => __('For instance, if you need to explain discount conditions, payment schedule, etc.', 'mro-pages'),
-	  'attributes' => array(
-	    'class' => 'large-text',
-	    "maxlength"  => '180',
-	    // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-pages'),
-	    ),
+		'type' => 'editor',
+		'field' => 'mro_training_pricing_notes',
+		'label' => __('Pricing notes', 'mro-pages'),
+		'description' => __('Further explanation needed to clarify pricing.', 'mro-pages'),
+		'help' => __('For instance, if you need to explain discount conditions, payment schedule, etc.', 'mro-pages'),
+		'options' => array(
+			'media_buttons' => false,
+			'teeny' => true,
+			'textarea_rows' => 5,
+			'drag_drop_upload' => false,
+			'tinymce' => array(
+				'resize' => false,
+				'wp_autoresize_on' => true,
+			),
+		),
 	));
 }
-
 
 //Duration
 function training_duration($label = 'Duración') {

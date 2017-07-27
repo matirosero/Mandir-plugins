@@ -50,9 +50,6 @@ function mro_schedule_get_events() {
 }
 
 
-
-
-
 function mro_schedule_fields_array($group) {
   // Store the repeatable block in array
   $repeatable_fields = array(
@@ -185,7 +182,6 @@ function mro_schedule_fields_array($group) {
 
   return $repeatable_fields;
 }
-
 
 
 /*

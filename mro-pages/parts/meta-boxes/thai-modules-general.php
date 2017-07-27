@@ -16,3 +16,4 @@ training_includes('Cada nivel incluye');
 //Daily program
 training_schedule_daily();
 
+training_schedule_detailed();
