@@ -11,6 +11,21 @@ Order: 4
 // Select currency symbol
 piklist('field', array(
   'type' => 'radio',
+  'field' => 'mro_event_payment_type',
+  'label' => __('Type of payment', 'mro-events'),
+  // 'help' => __('This controlls what symbol is appended to the price.', 'mro-events'),
+  'choices' => array(
+    'free' => __('Free', 'mro-events'),
+    'price' => __('Set price', 'mro-events'),
+    'donation' => __('Donation', 'mro-events'),
+  ),
+  'value' => 'free',
+));
+
+
+// Select currency symbol
+piklist('field', array(
+  'type' => 'radio',
   'field' => 'mro_event_currency',
   'label' => __('Currency', 'mro-events'),
   'help' => __('This controlls what symbol is appended to the price.', 'mro-events'),
@@ -19,6 +34,42 @@ piklist('field', array(
     '₡' => __('CR colones (₡)', 'mro-events'),
   ),
   'value' => '$',
+  'conditions' => array(
+    'relation' => 'or',
+    array(
+      'field' => 'mro_event_payment_type',
+      'value' => 'price',
+    ),
+    array(
+      'field' => 'mro_event_payment_type',
+      'value' => 'donation',
+    ),
+  ),
+));
+
+
+// Donation
+piklist('field', array(
+  'type' => 'text',
+  'field' => 'mro_event_donation',
+  'label' => __('Suggested donation', 'mro-events'),
+  'description' => __('Must be a number.', 'mro-events'),
+  'help' => __('Must be "100", "10.5", etc. Not "100 dollars".', 'mro-events'),
+  'attributes' => array(
+    // 'class' => 'regular-text',
+    'placeholder' => __('100', 'mro-events'),
+    ),
+  'validate' => array(
+    array(
+      'type' => 'valid_number'
+    )
+  ),
+  'conditions' => array(
+    array(
+      'field' => 'mro_event_payment_type',
+      'value' => 'donation',
+    ),
+  ),
 ));
 
 
@@ -37,6 +88,12 @@ piklist('field', array(
     array(
       'type' => 'valid_number'
     )
+  ),
+  'conditions' => array(
+    array(
+      'field' => 'mro_event_payment_type',
+      'value' => 'price',
+    ),
   ),
 ));
 
@@ -75,6 +132,12 @@ piklist('field', array(
         'placeholder' => __('Early bird price before May 5', 'mro-events'),
         ),
       'columns' => 12,
+    ),
+  ),
+  'conditions' => array(
+    array(
+      'field' => 'mro_event_payment_type',
+      'value' => 'price',
     ),
   ),
 ));
