@@ -82,8 +82,8 @@ piklist('field', array(
 		),
 		array(
 			'type' => 'checkbox',
-			'field' => 'diploma',
-			'label' => __('Diploma issued by', 'mro-pages'),
+			'field' => 'certificate',
+			'label' => __('Certificate issued by', 'mro-pages'),
 			'columns' => 12,
 			'list' => false,
 			'choices' => array(
