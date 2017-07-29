@@ -444,21 +444,16 @@ function training_pricing() {
 
 	//Pricing notes
 	piklist('field', array(
-		'type' => 'editor',
+		'type' => 'textarea',
 		'field' => 'mro_training_pricing_notes',
 		'label' => __('Pricing notes', 'mro-pages'),
 		'description' => __('Further explanation needed to clarify pricing.', 'mro-pages'),
 		'help' => __('For instance, if you need to explain discount conditions, payment schedule, etc.', 'mro-pages'),
-		'options' => array(
-			'media_buttons' => false,
-			'teeny' => true,
-			'textarea_rows' => 5,
-			'drag_drop_upload' => false,
-			'tinymce' => array(
-				'resize' => false,
-				'wp_autoresize_on' => true,
-			),
+		'attributes' => array(
+			// 'class' => 'large-text',
+			'maxlength'  => '180',
 		),
+		'columns' => 12,
 	));
 }
 
@@ -471,6 +466,6 @@ function training_duration($label = 'Duración') {
 	  'attributes' => array(
 	    'class' => 'large-text',
 	    "maxlength"  => '180',
-	    ),
+	  ),
 	));
 }

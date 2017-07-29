@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MRo Mandir Pages\n"
-"POT-Creation-Date: 2017-06-05 16:27-0600\n"
-"PO-Revision-Date: 2017-06-05 16:29-0600\n"
+"POT-Creation-Date: 2017-07-28 18:31-0600\n"
+"PO-Revision-Date: 2017-07-28 18:39-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_MX\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -21,136 +21,429 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#: inc/general-functions.php:8
+msgid "General Information"
+msgstr "Información General"
+
+#: inc/helper-functions.php:7 parts/meta-boxes/thai-modules.php:39
+#, php-format
+msgid "#%d (no title)"
+msgstr "#%d (sin título)"
+
+#: inc/training-functions.php:9
+msgid "Enrollment state"
+msgstr "Estado de matrícula"
+
+#: inc/training-functions.php:12
+msgid "Enrollment closed"
+msgstr "Matrícula cerrada"
+
+#: inc/training-functions.php:13
+msgid "Enrollment open"
+msgstr "Matrícula abierta"
+
+#: inc/training-functions.php:22
+msgid "Course dates"
+msgstr "Fechas del curso"
+
+#: inc/training-functions.php:29 parts/meta-boxes/thai-modules.php:134
+msgid "Date start"
+msgstr "Fecha de inicio"
+
+#: inc/training-functions.php:38 parts/meta-boxes/thai-modules.php:143
+msgid "Date end"
+msgstr "Fecha de fin"
+
+#: inc/training-functions.php:50
+msgid "Mostrar únicamente meses"
+msgstr ""
+
+#: inc/training-functions.php:51
+msgid "Mostrar fechas exactas"
+msgstr ""
+
+#: inc/training-functions.php:62
+msgid "Orientation"
+msgstr "Orientación"
+
+#: inc/training-functions.php:70 inc/training-functions.php:365
+msgid "Date"
+msgstr "Fecha"
+
+#: inc/training-functions.php:79
+msgid "Time"
+msgstr "Hora"
+
+#: inc/training-functions.php:88
+msgid "Mostrar orientación"
+msgstr ""
+
+#: inc/training-functions.php:100
+msgid "Recommendations"
+msgstr "Recomendaciones"
+
+#: inc/training-functions.php:101
+msgid "One recommendation per line. Each line will be a bullet point."
+msgstr "Una recomendación por línea. Cada línea será un bullet."
+
+#: inc/training-functions.php:124 inc/training-functions.php:147
+#: inc/training-functions.php:208 parts/meta-boxes/training-curriculum.php:16
+msgid "Each line will be a bullet point."
+msgstr "Cada línea será un bullet."
+
+#: inc/training-functions.php:146
+msgid "Certification"
+msgstr "Reconocimiento"
+
+#: inc/training-functions.php:169 inc/training-functions.php:176
+msgid "Teachers"
+msgstr "Profesorado"
+
+#: inc/training-functions.php:177
+msgid "Information about the teachers."
+msgstr "Información sobre los profesores."
+
+#: inc/training-functions.php:193
+msgid "Image to show in this section"
+msgstr "Imagen a mostrar en esta sección"
+
+#: inc/training-functions.php:207
+msgid "How to enroll"
+msgstr "Cómo matricular"
+
+#: inc/training-functions.php:230 inc/training-functions.php:285
+msgid "Schedule"
+msgstr "Horario"
+
+#: inc/training-functions.php:237 inc/training-functions.php:327
+#: inc/training-functions.php:374 parts/meta-boxes/training-types.php:53
+msgid "Time start"
+msgstr "Hora inicio"
+
+#: inc/training-functions.php:243 inc/training-functions.php:333
+#: inc/training-functions.php:380 parts/meta-boxes/training-types.php:59
+msgid "Time end"
+msgstr "Hora fin"
+
+#: inc/training-functions.php:249 inc/training-functions.php:292
+#: parts/meta-boxes/training-types.php:65
+msgid "Days"
+msgstr "Días"
+
+#: inc/training-functions.php:254 parts/meta-boxes/training-types.php:70
+msgid "Monday"
+msgstr "Lunes"
+
+#: inc/training-functions.php:255 parts/meta-boxes/training-types.php:71
+msgid "Tuesday"
+msgstr "Martes"
+
+#: inc/training-functions.php:256 parts/meta-boxes/training-types.php:72
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#: inc/training-functions.php:257 parts/meta-boxes/training-types.php:73
+msgid "Thursday"
+msgstr "Jueves"
+
+#: inc/training-functions.php:258 parts/meta-boxes/training-types.php:74
+msgid "Friday"
+msgstr "Viernes"
+
+#: inc/training-functions.php:259 parts/meta-boxes/training-types.php:75
+msgid "Saturday"
+msgstr "Sábado"
+
+#: inc/training-functions.php:260 parts/meta-boxes/training-types.php:76
+msgid "Sunday"
+msgstr "Domingo"
+
+#: inc/training-functions.php:266 inc/training-functions.php:300
+msgid "Additional notes"
+msgstr "Notas complementarias"
+
+#: inc/training-functions.php:321
+msgid "Daily schedule"
+msgstr "Programa diario"
+
+#: inc/training-functions.php:339 parts/meta-boxes/thai-modules.php:68
+#: parts/meta-boxes/training-curriculum.php:34
+#: parts/meta-boxes/training-types.php:41
+msgid "Description"
+msgstr "Descripción"
+
+#: inc/training-functions.php:352
+msgid "Calendar"
+msgstr "Calendario"
+
+#: inc/training-functions.php:359 parts/meta-boxes/training-curriculum.php:22
+msgid "Title"
+msgstr "Título"
+
+#: inc/training-functions.php:396 parts/meta-boxes/product-bulk-price.php:37
+msgid "Currency"
+msgstr "Moneda"
+
+#: inc/training-functions.php:397 parts/meta-boxes/product-bulk-price.php:38
+msgid "This controlls what symbol is appended to the price."
+msgstr "Controla el símbolo monetario que va antes del precio."
+
+#: inc/training-functions.php:399 parts/meta-boxes/product-bulk-price.php:40
+msgid "US dollars ($)"
+msgstr "Dólares ($)"
+
+#: inc/training-functions.php:400 parts/meta-boxes/product-bulk-price.php:41
+msgid "CR colones (₡)"
+msgstr "Colones (₡)"
+
+#: inc/training-functions.php:410
+msgid "Pricing options"
+msgstr "Opciones de precio"
+
+#: inc/training-functions.php:411
+msgid "Add as many as needed. Price must be a number."
+msgstr "Añadir todas las necesarias. Precio debe ser un número."
+
+#: inc/training-functions.php:418 parts/meta-boxes/product-bulk-price.php:74
+#: parts/meta-boxes/training-types.php:27
+msgid "Price"
+msgstr "Precio"
+
+#: inc/training-functions.php:419
+msgid "Must be \"100\", \"10.5\", etc. Not \"100 dollars\"."
+msgstr "Debe ser “100”, “10.5”, etc. No “100 dólares”."
+
+#: inc/training-functions.php:422 parts/meta-boxes/training-payment.php:76
+#: parts/meta-boxes/training-types.php:30
+msgid "100"
+msgstr "100"
+
+#: inc/training-functions.php:434 parts/meta-boxes/training-payment.php:38
+#: parts/meta-boxes/training-payment.php:88
+msgid "Descripción"
+msgstr ""
+
+#: inc/training-functions.php:437
+msgid "Early bird price before May 5"
+msgstr "Precio pronto pago antes del 5 de mayo"
+
+#: inc/training-functions.php:449
+msgid "Pricing notes"
+msgstr "Notas sobre precio"
+
+#: inc/training-functions.php:450
+msgid "Further explanation needed to clarify pricing."
+msgstr "Explicaciones adicionales necesarias para explicar precio."
+
+#: inc/training-functions.php:451
+msgid ""
+"For instance, if you need to explain discount conditions, payment schedule, "
+"etc."
+msgstr ""
+"Por ejemplo, si es necesario explicar condiciones para descuentos, "
+"cronograma de pagos, etc."
+
+#: inc/validation-rules.php:9
+msgid "is not a number"
+msgstr "no es un número"
+
+#: parts/meta-boxes/about-content.php:16
+#: parts/meta-boxes/product-bulk-price.php:22
+msgid "Information"
+msgstr "Información"
+
+#: parts/meta-boxes/about-content.php:17
+msgid "Highlighted information, with large image to the side."
+msgstr "Información destacada con imagen grande al lado."
+
+#: parts/meta-boxes/about-content.php:22 parts/meta-boxes/store-mats.php:61
+#: parts/meta-boxes/store-products.php:59
+msgid "Image"
+msgstr "Imagen"
+
+#: parts/meta-boxes/about-content.php:23 parts/meta-boxes/store-mats.php:62
+msgid "Upload only ONE image, only one will be used on page."
+msgstr "Subir sólo una imagen, sólo una aparecerá en la página."
+
+#: parts/meta-boxes/about-location.php:16
+#: parts/meta-boxes/about-location.php:28
+msgid "Location"
+msgstr "Lugar"
+
+#: parts/meta-boxes/about-location.php:22
+msgid "Map shortcode"
+msgstr "Shortcode del mapa"
+
+#: parts/meta-boxes/about-location.php:34
+msgid "Name"
+msgstr "Nombre"
+
+#: parts/meta-boxes/about-location.php:40
+msgid "Address"
+msgstr "Dirección"
+
+#: parts/meta-boxes/about-location.php:49
+msgid "Telephone"
+msgstr "Teléfono"
+
+#: parts/meta-boxes/page-excerpt.php:27
+msgid "Introduction"
+msgstr "Introducción"
+
+#: parts/meta-boxes/product-bulk-price.php:16
+msgid "Bulk pricing"
+msgstr "Precios al por mayor"
+
+#: parts/meta-boxes/product-bulk-price.php:48
+msgid "Notes on taxes"
+msgstr "Notas sobre impuestos"
+
+#: parts/meta-boxes/product-bulk-price.php:59
+msgid "Qty"
+msgstr "Cant"
+
+#: parts/meta-boxes/product-bulk-price.php:63
+msgid "6"
+msgstr "6"
+
+#: parts/meta-boxes/product-bulk-price.php:78
+msgid "50"
+msgstr "50"
+
+#: parts/meta-boxes/store-mats.php:33
+msgid "Featured product"
+msgstr "Producto destacado"
+
+#: parts/meta-boxes/store-mats.php:34
+msgid "Add the information and images for the featured product."
+msgstr "Añadir la información e imágenes del producto recomendados."
+
+#: parts/meta-boxes/store-mats.php:39 parts/meta-boxes/store-products.php:22
+msgid "Product name"
+msgstr "Nombre del producto"
+
+#: parts/meta-boxes/store-mats.php:45
+msgid "Product information on Store page"
+msgstr ""
+"Información del producto que aparecerá en la página principal de la tienda"
+
+#: parts/meta-boxes/store-mats.php:46 parts/meta-boxes/store-products.php:29
+msgid "Describe the product."
+msgstr "Describir el producto."
+
+#: parts/meta-boxes/store-mats.php:71
+msgid "Product page"
+msgstr "Página del producto"
+
+#: parts/meta-boxes/store-products.php:16
+msgid "Other products"
+msgstr "Otros productos"
+
+#: parts/meta-boxes/store-products.php:17
+msgid "Add the information and images for products."
+msgstr "Añadir la información e imágenes de productos."
+
+#: parts/meta-boxes/store-products.php:28
+msgid "Product information"
+msgstr "Información del producto"
+
+#: parts/meta-boxes/store-products.php:44
+msgid "Price (colones)"
+msgstr "Precio (colones)"
+
+#: parts/meta-boxes/store-products.php:47
+#: parts/meta-boxes/training-payment.php:26
+msgid "500"
+msgstr "500"
+
+#: parts/meta-boxes/thai-modules.php:46
+msgid "Other (enter manually)"
+msgstr "Otro (añadir manualmente)"
+
+#: parts/meta-boxes/thai-modules.php:56
+msgid "Módulos"
+msgstr "Módulos"
+
+#: parts/meta-boxes/thai-modules.php:62
+msgid "Module name"
+msgstr "Nombre del módulo"
+
+#: parts/meta-boxes/thai-modules.php:77
+msgid "Who this course is for"
+msgstr "Para quién es este curso"
+
+#: parts/meta-boxes/thai-modules.php:86
+msgid "Diploma issued by"
+msgstr "Certificación expedido por"
+
+#: parts/meta-boxes/thai-modules.php:99
+msgid "Choose teacher"
+msgstr "Escoger profesor"
+
+#: parts/meta-boxes/thai-modules.php:122
+msgid "Levels in this module"
+msgstr "Niveles en este módulo"
+
+#: parts/meta-boxes/thai-modules.php:127
+msgid "Level"
+msgstr "Nivel"
+
+#: parts/meta-boxes/thai-modules.php:153
 #: parts/meta-boxes/training-curriculum.php:15
 msgid "Curriculum"
 msgstr "Curriculum"
 
-#: parts/meta-boxes/training-curriculum.php:16
-#: parts/meta-boxes/training-enrolling.php:16
-#: parts/meta-boxes/training-information.php:60
-msgid "Each line will be a bullet point."
-msgstr "Cada línea será un bullet."
-
-#: parts/meta-boxes/training-curriculum.php:22
-msgid "Title"
-msgstr "Título"
-
 #: parts/meta-boxes/training-curriculum.php:28
-#: parts/meta-boxes/training-dates.php:121
-msgid "Time"
-msgstr "Hora"
+msgid "Training hours"
+msgstr "Horas de formación"
 
-#: parts/meta-boxes/training-curriculum.php:34
-msgid "Description"
-msgstr "Descripción"
+#: parts/meta-boxes/training-payment.php:15
+msgid "Reserve your spot"
+msgstr "Reservá tu espacio"
 
-#: parts/meta-boxes/training-dates.php:15
-msgid "Course dates"
-msgstr "Fechas del curso"
+#: parts/meta-boxes/training-payment.php:23
+msgid "Reserve amount"
+msgstr "Importe de la reserva"
 
-#: parts/meta-boxes/training-dates.php:22
-msgid "Date start"
-msgstr "Fecha de inicio"
-
-#: parts/meta-boxes/training-dates.php:31
-msgid "Date end"
-msgstr "Fecha de fin"
-
-#: parts/meta-boxes/training-dates.php:43
-msgid "Mostrar únicamente meses"
+#: parts/meta-boxes/training-payment.php:41
+msgid "Se descuenta de los pagos restantes"
 msgstr ""
 
-#: parts/meta-boxes/training-dates.php:44
-msgid "Mostrar fechas exactas"
-msgstr ""
+#: parts/meta-boxes/training-payment.php:52
+msgid "Payment options"
+msgstr "Opciones de pago"
 
-#: parts/meta-boxes/training-dates.php:53
-msgid "Schedule"
-msgstr "Horario"
+#: parts/meta-boxes/training-payment.php:53
+msgid "Add as many as needed."
+msgstr "Agregar todas las necesarias."
 
-#: parts/meta-boxes/training-dates.php:61
-msgid "Time start"
-msgstr "Hora inicio"
+#: parts/meta-boxes/training-payment.php:60
+msgid "Payments"
+msgstr "Pagos"
 
-#: parts/meta-boxes/training-dates.php:67
-msgid "Time end"
-msgstr "Hora fin"
+#: parts/meta-boxes/training-payment.php:62
+msgid "1"
+msgstr "1"
 
-#: parts/meta-boxes/training-dates.php:73
-msgid "Days"
-msgstr "Días"
+#: parts/meta-boxes/training-payment.php:74
+msgid "Discount amount"
+msgstr "Monto de descuento"
 
-#: parts/meta-boxes/training-dates.php:78
-msgid "Monday"
-msgstr "Lunes"
+#: parts/meta-boxes/training-payment.php:91
+msgid "Payment due on week 1"
+msgstr "Pagar en la primera semana"
 
-#: parts/meta-boxes/training-dates.php:79
-msgid "Tuesday"
-msgstr "Martes"
+#: parts/meta-boxes/training-types.php:14
+msgid "Tipos"
+msgstr "Tipos"
 
-#: parts/meta-boxes/training-dates.php:80
-msgid "Wednesday"
-msgstr "Miércoles"
+#: parts/meta-boxes/training-types.php:21
+msgid "Title (hours)"
+msgstr "Título (horas)"
 
-#: parts/meta-boxes/training-dates.php:81
-msgid "Thursday"
-msgstr "Jueves"
-
-#: parts/meta-boxes/training-dates.php:82
-msgid "Friday"
-msgstr "Viernes"
-
-#: parts/meta-boxes/training-dates.php:83
-msgid "Saturday"
-msgstr "Sábado"
-
-#: parts/meta-boxes/training-dates.php:84
-msgid "Sunday"
-msgstr "Domingo"
-
-#: parts/meta-boxes/training-dates.php:90
+#: parts/meta-boxes/training-types.php:82
 msgid "Weekend workshops"
 msgstr "Talleres de fin de semana"
-
-#: parts/meta-boxes/training-dates.php:105
-msgid "Orientation"
-msgstr "Orientación"
-
-#: parts/meta-boxes/training-dates.php:112
-msgid "Date"
-msgstr "Fecha"
-
-#: parts/meta-boxes/training-enrolling.php:15
-msgid "How to enroll"
-msgstr "Cómo matricular"
-
-#: parts/meta-boxes/training-information.php:16
-msgid "Introduction"
-msgstr "Introducción"
-
-#: parts/meta-boxes/training-information.php:18
-msgid "Basic information, goes under title."
-msgstr "Información básica, aparece por debajo de título."
-
-#: parts/meta-boxes/training-information.php:38
-msgid "Recommendations"
-msgstr "Recomendaciones"
-
-#: parts/meta-boxes/training-information.php:39
-msgid "One recommendation per line. Each line will be a bullet point."
-msgstr "Una recomendación por línea. Cada línea será un bullet."
-
-#: parts/meta-boxes/training-information.php:59
-msgid "Certification"
-msgstr "Reconociendo"
-
-#: parts/meta-boxes/training-information.php:80
-msgid "Teachers"
-msgstr "Profesorado"
-
-#: parts/meta-boxes/training-information.php:82
-msgid "Information about the teachers."
-msgstr "Información sobre los profesores."
 
 #. Plugin Name of the plugin/theme
 msgid "MRo Mandir Pages"
@@ -162,7 +455,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid "Sets up custom meta for assorted Yoga Mandir pages."
-msgstr ""
+msgstr "Establece meta personalizada para páginas de Yoga Mandir."
 
 #. Author of the plugin/theme
 msgid "Mat Rosero"
@@ -171,3 +464,6 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://2tabbies.com"
 msgstr ""
+
+#~ msgid "Basic information, goes under title."
+#~ msgstr "Información básica, aparece por debajo de título."
