@@ -9,5 +9,5 @@ Template: page-templates/template-certification
 */
 
 
-training_teachers();
+training_teachers('certificaciones');
 

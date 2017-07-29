@@ -161,8 +161,13 @@ function training_diploma() {
 	));
 }
 
+
 //Certification teachers
-function training_teachers() {
+function training_teachers($tax) {
+
+	if ( $tax == 'certificaciones' ) :
+		$tax = array( 'certificaciones', 'invitado' );
+	endif;
 
 	piklist('field', array(
 		'type' => 'radio',
@@ -182,7 +187,7 @@ function training_teachers() {
 		'field' => 'mro_training_teacher_id',
 		'label' => __('Choose teacher', 'mro-pages'),
 		'columns' => 4,
-		'choices' => mro_training_get_teachers( array( 'certificaciones', 'invitado' ) ),
+		'choices' => mro_training_get_teachers( $tax ),
 		'conditions' => array(
 			array(
 				'field' => 'mro_training_teachers_select',

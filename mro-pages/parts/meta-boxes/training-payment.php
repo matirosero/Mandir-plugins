@@ -4,7 +4,7 @@ Title: Inversión y forma de pago
 Post Type: page
 Context: normal
 Priority: high
-Order: 6
+Order: 7
 Template: page-templates/template-training
 */
 

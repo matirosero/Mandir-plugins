@@ -4,7 +4,7 @@ Title: Curriculum
 Post Type: page
 Context: normal
 Priority: high
-Order: 5
+Order: 6
 Template: page-templates/template-training
 */
 
