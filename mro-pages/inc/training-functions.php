@@ -179,7 +179,7 @@ function training_teachers() {
 	//Select teacher
 	piklist('field', array(
 		'type' => 'select',
-		'field' => 'teacher_id',
+		'field' => 'mro_training_teacher_id',
 		'label' => __('Choose teacher', 'mro-pages'),
 		'columns' => 4,
 		'choices' => mro_training_get_teachers( array( 'certificaciones', 'invitado' ) ),
