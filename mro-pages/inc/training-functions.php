@@ -163,40 +163,74 @@ function training_diploma() {
 
 //Certification teachers
 function training_teachers() {
+
 	piklist('field', array(
-	  'type' => 'group',
-	  // 'field' => 'mro_training_teachers', // Including a field at this level saves all data in a serialized array.
-	  'label' => __('Teachers', 'mro-pages'),
-	  // 'description' => __('Each line will be a bullet point.', 'mro-pages'),
-	  'add_more' => false,
-	  'fields' => array(
-	    array(
-	      'type' => 'editor',
-	      'field' => 'mro_training_teachers',
-	      'label' => __('Teachers', 'mro-pages'),
-	      'description' => __('Information about the teachers.', 'mro-pages'),
-	      'options' => array(
-	        'media_buttons' => false,
-	        'teeny' => true,
-	        'textarea_rows' => 5,
-	        'drag_drop_upload' => false,
-	        'tinymce' => array(
-	          'resize' => false,
-	          'wp_autoresize_on' => true,
-	        ),
-	      ),
-	    ),
-	    array(
-	      'type' => 'file',
-	      'field' => 'mro_training_teachers_image',
-	      'scope' => 'post_meta',
-	      'label' => __('Image to show in this section', 'piklist-demo'),
-	      'attributes' => array(
-	        'data-multiple' => false,
-	      ),
-	    ),
-	  ),
+		'type' => 'radio',
+		'field' => 'mro_training_teachers_select',
+		'label' => __('Select a teacher or fill in information', 'mro-events'),
+		// 'help' => __('This controlls what symbol is appended to the price.', 'mro-events'),
+		'choices' => array(
+			'select' => __('Select a teacher', 'mro-events'),
+			'custom' => __('Fill in teacher information', 'mro-events'),
+		),
+		'value' => 'select',
 	));
+
+	//Select teacher
+	piklist('field', array(
+		'type' => 'select',
+		'field' => 'teacher_id',
+		'label' => __('Choose teacher', 'mro-pages'),
+		'columns' => 4,
+		'choices' => mro_training_get_teachers( array( 'certificaciones', 'invitado' ) ),
+		'conditions' => array(
+			array(
+				'field' => 'mro_training_teachers_select',
+				'value' => 'select',
+			),
+		),
+	));
+
+	piklist('field', array(
+
+		'type' => 'editor',
+		'field' => 'mro_training_teachers',
+		'label' => __('Teachers', 'mro-pages'),
+		'description' => __('Information about the teachers.', 'mro-pages'),
+		'options' => array(
+			'media_buttons' => false,
+			'teeny' => true,
+			'textarea_rows' => 5,
+			'drag_drop_upload' => false,
+			'tinymce' => array(
+				'resize' => false,
+				'wp_autoresize_on' => true,
+			),
+		),
+		'conditions' => array(
+			array(
+				'field' => 'mro_training_teachers_select',
+				'value' => 'custom',
+			),
+		),
+	));
+
+	piklist('field', array(
+		'type' => 'file',
+		'field' => 'mro_training_teachers_image',
+		'scope' => 'post_meta',
+		'label' => __('Image to show in this section', 'piklist-demo'),
+		'attributes' => array(
+			'data-multiple' => false,
+		),
+		'conditions' => array(
+			array(
+				'field' => 'mro_training_teachers_select',
+				'value' => 'custom',
+			),
+		),
+	));
+
 }
 
 //Enrolling

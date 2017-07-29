@@ -8,46 +8,7 @@ Order: 5
 Template: page-templates/template-thai
 */
 
-// Build teachers array
-function mro_training_get_teachers($terms) {
-  $teachers = get_posts(
-    array(
-      'post_type' => 'mro-team',
-      'orderby' => 'title',
-      'order' => 'ASC',
-      'posts_per_page' => -1,
-      'tax_query' => array(
-        array(
-          'taxonomy' => 'mro_team_tax',
-          'field'    => 'slug',
-          'terms'    => $terms,
-        ),
-      ),
-    ), 'objects');
 
-	$teachers = piklist($teachers, array('ID', 'post_title'));
-	$teachers = mro_training_build_choices($teachers,true);
-
-  return $teachers;
-}
-
-
-// Return an array formatted for select field
-function mro_training_build_choices($choices,$manual_option=false) {
-	foreach ($choices as $value => $choice):
-		if ($choice === ''):
-			$choices[$value] = sprintf(__('#%d (no title)'), $value);
-		endif;
-	endforeach;
-
-	$choices = array_replace(array('' => '&mdash; Select &mdash;'), $choices);
-
-	if ($manual_option==true) :
-		$choices['other'] = __('Other (enter manually)', 'mro-pages');
-	endif;
-
-	return $choices;
-}
 
 
 piklist('field', array(
@@ -100,20 +61,6 @@ piklist('field', array(
 	      'columns' => 4,
 	      'choices' => mro_training_get_teachers('masaje-tailandes'),
 	    ),
-
-	    //Enter manual teacher name
-	    // array(
-	    //   'type' => 'textarea',
-	    //   'field' => 'manual_teacher',
-	    //   'label' => __('Teacher\'s name', 'mro-pages'),
-	    //   'columns' => 12,
-	    //   'conditions' => array(
-	    //     array(
-	    //       'field' => $group.'teacher_id',
-	    //       'value' => 'other',
-	    //     ),
-	    //   ),
-	    // ),
 
 		array(
 			'type' => 'group',

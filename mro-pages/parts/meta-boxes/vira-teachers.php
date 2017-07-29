@@ -1,18 +1,13 @@
 <?php
 /*
-Title: Información
+Title: Profesorado
 Post Type: page
 Context: normal
 Priority: high
-Order: 3
+Order: 4
 Template: page-templates/template-certification
 */
 
 
-mro_the_content();
+training_teachers();
 
-training_recs();
-
-training_includes();
-
-training_diploma();
