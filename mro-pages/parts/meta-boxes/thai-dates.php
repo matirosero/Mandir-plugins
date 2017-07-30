@@ -10,3 +10,6 @@ Template: page-templates/template-thai
 
 //Dates
 training_dates();
+
+//Duration
+training_duration();

@@ -9,7 +9,7 @@ Template: page-templates/template-thai
 */
 
 
-training_duration('Duración de cada nivel');
+// training_duration('Duración de cada nivel');
 
 training_includes('Cada nivel incluye');
 
