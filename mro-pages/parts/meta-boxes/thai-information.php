@@ -11,6 +11,8 @@ Template: page-templates/template-thai
 
 mro_the_content();
 
+thai_teachers();
+
 training_pricing();
 
 // training_includes();
@@ -19,3 +21,4 @@ training_pricing();
 
 // training_teachers();
 
+training_enroll();

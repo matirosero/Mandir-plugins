@@ -162,6 +162,52 @@ function training_diploma() {
 }
 
 
+// Thai teachers
+//Certification teachers
+function thai_teachers() {
+
+
+	piklist('field', array(
+		'type' => 'radio',
+		'field' => 'mro_thai_teachers_same',
+		'label' => __('One teacher for the whole certification?', 'mro-pages'),
+		// 'help' => __('This controlls what symbol is appended to the price.', 'mro-pages'),
+		'choices' => array(
+			1 => __('One teacher', 'mro-pages'),
+			0 => __('Different teachers for each program', 'mro-pages'),
+		),
+		'value' => 1,
+	));
+
+	//Select teacher
+	piklist('field', array(
+		'type' => 'select',
+		'field' => 'mro_training_teacher_id',
+		'label' => __('Choose teacher', 'mro-pages'),
+		'columns' => 4,
+		'choices' => mro_training_get_teachers( 'masaje-tailandes' ),
+		'conditions' => array(
+			array(
+				'field' => 'mro_thai_teachers_same',
+				'value' => 1,
+			),
+		),
+	));
+
+	piklist('field',array(
+	    'type'=>'html',
+	    'label' => '',
+	    'value' => '<p style="margin-top:0;"><strong>'.__('Select the teach in each module\'s section.', 'mro-pages').'</strong></p>',
+		'conditions' => array(
+			array(
+				'field' => 'mro_thai_teachers_same',
+				'value' => 0,
+			),
+		),
+	));
+}
+
+
 //Certification teachers
 function training_teachers($tax) {
 
@@ -172,11 +218,11 @@ function training_teachers($tax) {
 	piklist('field', array(
 		'type' => 'radio',
 		'field' => 'mro_training_teachers_select',
-		'label' => __('Select a teacher or fill in information', 'mro-events'),
-		// 'help' => __('This controlls what symbol is appended to the price.', 'mro-events'),
+		'label' => __('Select a teacher or fill in information', 'mro-pages'),
+		// 'help' => __('This controlls what symbol is appended to the price.', 'mro-pages'),
 		'choices' => array(
-			'select' => __('Select a teacher', 'mro-events'),
-			'custom' => __('Fill in teacher information', 'mro-events'),
+			'select' => __('Select a teacher', 'mro-pages'),
+			'custom' => __('Fill in teacher information', 'mro-pages'),
 		),
 		'value' => 'select',
 	));

@@ -48,18 +48,19 @@ piklist('field', array(
 			'columns' => 12,
 			'list' => false,
 			'choices' => array(
-				'Escuela Yoga Mandir',
-				'The Sunshine Network',
+				'Escuela Yoga Mandir' => 'Escuela Yoga Mandir',
+				'The Sunshine Network' => 'The Sunshine Network',
 	        ),
 		),
 
 	    //Select teacher
 	    array(
-	      'type' => 'select',
-	      'field' => 'teacher_id',
-	      'label' => __('Choose teacher', 'mro-pages'),
-	      'columns' => 4,
-	      'choices' => mro_training_get_teachers('masaje-tailandes'),
+			'type' => 'select',
+			'field' => 'teacher_id',
+			'label' => __('Choose teacher', 'mro-pages'),
+			'help' => __('This will be overriden if you\'ve selected "One teacher for the whole certification"', 'mro-pages'),
+			'columns' => 4,
+			'choices' => mro_training_get_teachers('masaje-tailandes'),
 	    ),
 
 		array(
