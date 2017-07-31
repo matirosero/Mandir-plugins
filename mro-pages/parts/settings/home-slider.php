@@ -1,10 +1,18 @@
 <?php
 /*
-Title: Slider images
-Setting: mro_frontpage_settings
-Order: 1
+Title: Slider
+Order: 10
+Tab: Home
+Setting: mandir_fields
+Flow: Mandir Workflow
 */
+?>
 
+<div class="piklist-demo-highlight">
+  <?php _e('Manage the slider on the homepage.', 'mro-pages');?>
+</div>
+
+<?php
 
 piklist('field', array(
   'type' => 'checkbox',

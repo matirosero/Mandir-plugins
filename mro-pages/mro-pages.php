@@ -24,3 +24,24 @@ add_action( 'plugins_loaded', 'mro_pages_load_plugin_textdomain' );
 foreach ( glob( plugin_dir_path( __FILE__ ) . "inc/*.php" ) as $file ) {
     include_once $file;
 }
+
+
+add_filter('piklist_admin_pages', 'mro_admin_pages');
+function mro_admin_pages($pages) {
+	$pages[] = array(
+		'page_title' => __('Mandir Settings')
+		,'menu_title' => __('Mandir Settings', 'piklist-demo')
+		// ,'sub_menu' => 'edit.php?post_type=piklist_demo'
+		,'capability' => 'manage_options'
+		,'menu_slug' => 'mandir_fields'
+		,'setting' => 'mandir_fields'
+		,'menu_icon' => 'dashicons-admin-home'
+		,'page_icon' => 'dashicons-admin-home'
+		,'default_tab' => 'Basic'
+		// ,'layout' => 'meta-boxes' // NOTE: Uncomment this to use the meta box layout on this settings page!
+		,'save_text' => 'Save Mandir Settings',
+		'position' => 4,
+	);
+
+	return $pages;
+}
