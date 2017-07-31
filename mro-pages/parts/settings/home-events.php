@@ -43,7 +43,7 @@ function mro_get_events_home() {
 piklist('field', array(
   'type' => 'select',
   'field' => 'frontpage_events',
-  'label' => __('Select events to show', 'mro-frontpage'),
+  'label' => __('Select events to show', 'mro-pages'),
   'value' => '',
   'choices' => mro_get_events_home(),
   'attributes' => array(

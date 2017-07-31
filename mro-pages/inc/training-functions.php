@@ -197,7 +197,7 @@ function thai_teachers() {
 	piklist('field',array(
 	    'type'=>'html',
 	    'label' => '',
-	    'value' => '<p style="margin-top:0;"><strong>'.__('Select the teach in each module\'s section.', 'mro-pages').'</strong></p>',
+	    'value' => '<p style="margin-top:0;"><strong>'.__('Select the teacher in each module\'s section.', 'mro-pages').'</strong></p>',
 		'conditions' => array(
 			array(
 				'field' => 'mro_thai_teachers_same',

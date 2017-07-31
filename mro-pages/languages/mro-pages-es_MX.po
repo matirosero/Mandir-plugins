@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MRo Mandir Pages\n"
-"POT-Creation-Date: 2017-07-30 18:21-0600\n"
-"PO-Revision-Date: 2017-07-30 18:26-0600\n"
+"POT-Creation-Date: 2017-07-30 21:52-0600\n"
+"PO-Revision-Date: 2017-07-30 21:52-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_MX\n"
@@ -113,8 +113,8 @@ msgid "Choose teacher"
 msgstr "Escoger profesor"
 
 #: inc/training-functions.php:200
-msgid "Select the teach in each module's section."
-msgstr ""
+msgid "Select the teacher in each module's section."
+msgstr "Seleccione el profesor en la sección de cada módulo."
 
 #: inc/training-functions.php:221
 msgid "Select a teacher or fill in information"
@@ -311,11 +311,11 @@ msgstr "Lugar"
 msgid "Map shortcode"
 msgstr "Shortcode del mapa"
 
-#: parts/meta-boxes/about-location.php:34
+#: parts/meta-boxes/about-location.php:34 parts/settings/locations.php:36
 msgid "Name"
 msgstr "Nombre"
 
-#: parts/meta-boxes/about-location.php:40
+#: parts/meta-boxes/about-location.php:40 parts/settings/locations.php:42
 msgid "Address"
 msgstr "Dirección"
 
@@ -508,6 +508,22 @@ msgstr "Añadir campo(s)"
 #: parts/settings/home-slider.php:35
 msgid "Add"
 msgstr "Añadir"
+
+#: parts/settings/locations.php:12
+msgid "Manage locations."
+msgstr "Administrar ubicaciones."
+
+#: parts/settings/locations.php:20
+msgid "Maps shortcode"
+msgstr "Shortcode del mapa"
+
+#: parts/settings/locations.php:29
+msgid "Add locations"
+msgstr "Añadir ubicaciones"
+
+#: parts/settings/locations.php:59
+msgid "Phone number"
+msgstr "Número de teléfono"
 
 #: parts/settings/payment.php:12
 msgid "Manage payment options for events and certifications."
