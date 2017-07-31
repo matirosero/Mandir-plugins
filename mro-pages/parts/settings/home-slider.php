@@ -46,4 +46,10 @@ piklist('field', array(
       ),
     ),
   ),
+  'conditions' => array(
+    array(
+      'field' => 'hero_slider_enable',
+      'value' => 1,
+    ),
+  ),
 ));
