@@ -2,7 +2,7 @@
 /*
 Title: Activades
 Order: 20
-Tab: Home
+Tab: Homepage
 Setting: mandir_fields
 Flow: Mandir Workflow
 */

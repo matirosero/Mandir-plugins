@@ -2,7 +2,7 @@
 /*
 Title: Slider
 Order: 10
-Tab: Home
+Tab: Homepage
 Setting: mandir_fields
 Flow: Mandir Workflow
 */
