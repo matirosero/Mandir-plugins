@@ -19,7 +19,7 @@ function training_state() {
 function training_dates() {
 	piklist('field', array(
 	  'type' => 'group',
-	  'label' => __('Course dates', 'mro-pages'),
+	  'label' => __('Dates', 'mro-pages'),
 	  // 'description' => __('Add as many dates as needed.', 'mro-pages'),
 	  'add_more' => false,
 	  'fields' => array(
