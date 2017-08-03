@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MRo Mandir Pages\n"
-"POT-Creation-Date: 2017-07-30 21:52-0600\n"
-"PO-Revision-Date: 2017-07-30 21:52-0600\n"
+"POT-Creation-Date: 2017-08-02 23:23-0600\n"
+"PO-Revision-Date: 2017-08-02 23:23-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_MX\n"
@@ -43,14 +43,16 @@ msgid "Enrollment open"
 msgstr "Matrícula abierta"
 
 #: inc/training-functions.php:22
-msgid "Course dates"
-msgstr "Fechas del curso"
+msgid "Dates"
+msgstr "Fechas"
 
-#: inc/training-functions.php:29 parts/meta-boxes/thai-modules.php:82
+#: inc/training-functions.php:29 parts/meta-boxes/india-dates.php:42
+#: parts/meta-boxes/thai-modules.php:82
 msgid "Date start"
 msgstr "Fecha de inicio"
 
-#: inc/training-functions.php:38 parts/meta-boxes/thai-modules.php:91
+#: inc/training-functions.php:38 parts/meta-boxes/india-dates.php:51
+#: parts/meta-boxes/thai-modules.php:91
 msgid "Date end"
 msgstr "Fecha de fin"
 
@@ -209,7 +211,8 @@ msgstr "Descripción"
 msgid "Calendar"
 msgstr "Calendario"
 
-#: inc/training-functions.php:444 parts/meta-boxes/training-curriculum.php:22
+#: inc/training-functions.php:444 parts/meta-boxes/india-dates.php:36
+#: parts/meta-boxes/training-curriculum.php:22
 msgid "Title"
 msgstr "Título"
 
@@ -322,6 +325,18 @@ msgstr "Dirección"
 #: parts/meta-boxes/about-location.php:49
 msgid "Telephone"
 msgstr "Teléfono"
+
+#: parts/meta-boxes/india-dates.php:14
+msgid "Sidebar heading"
+msgstr "Encabezado de barra lateral"
+
+#: parts/meta-boxes/india-dates.php:29
+msgid "Additional dates"
+msgstr "Fechas adicionales"
+
+#: parts/meta-boxes/india-pricing.php:16
+msgid "Capacity"
+msgstr "Cupo"
 
 #: parts/meta-boxes/page-excerpt.php:27
 msgid "Introduction"
@@ -556,6 +571,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://2tabbies.com"
 msgstr ""
+
+#~ msgid "Course dates"
+#~ msgstr "Fechas del curso"
 
 #~ msgid "Other (enter manually)"
 #~ msgstr "Otro (añadir manualmente)"
