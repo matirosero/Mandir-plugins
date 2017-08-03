@@ -47,8 +47,8 @@ piklist('field', array(
     ),
     array(
       'type' => 'datepicker',
-      'field' => 'date_start',
-      'label' => __('Date start', 'mro-pages'),
+      'field' => 'date_end',
+      'label' => __('Date end', 'mro-pages'),
       'columns' => 4,
       'options' => array(
         'dateFormat' => 'yy-mm-dd',
