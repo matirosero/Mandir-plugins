@@ -156,3 +156,30 @@ piklist('field', array(
     // 'placeholder' => __('i.e. "$100 antes del 1 de mayo"', 'mro-events'),
     ),
 ));
+
+
+// Select currency symbol
+piklist('field', array(
+  'type' => 'checkbox',
+  'field' => 'mro_event_show_form',
+  'label' => __('Show reservation form', 'mro-events'),
+  // 'help' => __('This controlls what symbol is appended to the price.', 'mro-events'),
+  'choices' => array(
+    'yes' => __('Yes', 'mro-events'),
+  ),
+  'value' => 'yes',
+));
+
+
+// Select currency symbol
+piklist('field', array(
+  'type' => 'checkbox',
+  'field' => 'mro_event_bankinfo',
+  'label' => __('Show bank information', 'mro-events'),
+  // 'help' => __('This controlls what symbol is appended to the price.', 'mro-events'),
+  'choices' => array(
+    'local' => __('Local', 'mro-events'),
+    'international' => __('International', 'mro-events'),
+  ),
+  'value' => 'local',
+));
