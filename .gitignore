@@ -3,5 +3,5 @@
 !/mro-announcement-bar/
 !/mro-events/
 !/mro*
-!mro*
+!mr-google-analytics.php
 !.gitignore
