@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MRo Events\n"
-"POT-Creation-Date: 2017-04-04 10:10-0600\n"
-"PO-Revision-Date: 2017-04-04 10:12-0600\n"
+"POT-Creation-Date: 2017-09-03 17:37-0600\n"
+"PO-Revision-Date: 2017-09-03 17:40-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_AR\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: mro-events.php\n"
@@ -21,214 +21,265 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: mro-events.php:25
+#: mro-events.php:28
 msgctxt "post type general name"
 msgid "Events"
 msgstr "Eventos"
 
-#: mro-events.php:26
+#: mro-events.php:29
 msgctxt "post type singular name"
 msgid "Event"
 msgstr "Evento"
 
-#: mro-events.php:27
+#: mro-events.php:30
 msgctxt "admin menu"
 msgid "Events"
 msgstr "Eventos"
 
-#: mro-events.php:28
+#: mro-events.php:31
 msgctxt "add new on admin bar"
 msgid "Events"
 msgstr "Eventos"
 
-#: mro-events.php:29
+#: mro-events.php:32
 msgctxt "book"
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: mro-events.php:30
+#: mro-events.php:33
 msgid "Add New Event"
 msgstr "Añadir nuevo evento"
 
-#: mro-events.php:31
+#: mro-events.php:34
 msgid "New Event"
 msgstr "Nuevo evento"
 
-#: mro-events.php:32
+#: mro-events.php:35
 msgid "Edit Event"
 msgstr "Editar evento"
 
-#: mro-events.php:33
+#: mro-events.php:36
 msgid "View Event"
 msgstr "Ver evento"
 
-#: mro-events.php:34
+#: mro-events.php:37
 msgid "All Events"
 msgstr "Todos los eventos"
 
-#: mro-events.php:35
+#: mro-events.php:38
 msgid "Search Events"
 msgstr "Buscar eventos"
 
-#: mro-events.php:36
+#: mro-events.php:39
 msgid "Parent Events:"
 msgstr "Eventos Principales:"
 
-#: mro-events.php:37
+#: mro-events.php:40
 msgid "No Events found."
 msgstr "No se han encontrado eventos."
 
-#: mro-events.php:38
+#: mro-events.php:41
 msgid "No Events found in Trash."
 msgstr "No hay eventos en la papelera."
 
-#: mro-events.php:43
+#: mro-events.php:47
 msgid "Enter a new Event"
 msgstr "Añadir nuevo evento"
 
-#: mro-events.php:77
+#: mro-events.php:85
 msgid "is not a number"
 msgstr "no es un número"
 
-#: parts/meta-boxes/datetime-meta.php:16
+#: parts/meta-boxes/datetime-meta.php:15
 msgid "Date range?"
 msgstr "Rango de fechas?"
 
-#: parts/meta-boxes/datetime-meta.php:19
+#: parts/meta-boxes/datetime-meta.php:18
 msgid "If enabled and only 2 dates exist, they will be shown as a date range."
 msgstr ""
 "Si solo existen dos fechas, al habilitarse esta opción, serán mostradas como "
 "un rango."
 
-#: parts/meta-boxes/datetime-meta.php:21
+#: parts/meta-boxes/datetime-meta.php:20
 msgid ""
 "If you specifiy only 2 dates and check this, they will be shown as a date "
 "range: \"Jan 1-Jan2\". Otherwise it is asummed that the dates should be "
 "listed individually: Jan 1 and January 2."
 msgstr ""
+"Al habilitar esta opción y especificar sólo 2 fechas, se mostrará como un "
+"rango de fechas: \"Jan 1-Jan2\". Si no, se asume que las fechas deben "
+"figurar individualmente: 1 de enero y el 2 de enero."
 
-#: parts/meta-boxes/datetime-meta.php:54
+#: parts/meta-boxes/datetime-meta.php:28
+msgid "Same time for all dates?"
+msgstr "¿Mismo horario para todas las fechas?"
+
+#: parts/meta-boxes/datetime-meta.php:31
+msgid "No"
+msgstr ""
+
+#: parts/meta-boxes/datetime-meta.php:32 parts/meta-boxes/pricing-meta.php:168
+msgid "Yes"
+msgstr "Sí"
+
+#: parts/meta-boxes/datetime-meta.php:40
 msgid "Individual dates"
 msgstr "Fechas individuales"
 
-#: parts/meta-boxes/datetime-meta.php:55
+#: parts/meta-boxes/datetime-meta.php:41
 msgid "Add as many dates as needed."
 msgstr "Agregar todas las fechas necesarias."
 
-#: parts/meta-boxes/datetime-meta.php:61
+#: parts/meta-boxes/datetime-meta.php:47
 msgid "Date"
 msgstr "Fecha"
 
-#: parts/meta-boxes/datetime-meta.php:70
+#: parts/meta-boxes/datetime-meta.php:56
 msgid "Time start"
 msgstr "Hora inicio"
 
-#: parts/meta-boxes/datetime-meta.php:76
+#: parts/meta-boxes/datetime-meta.php:62
 msgid "Time end"
 msgstr "Hora fin"
 
-#: parts/meta-boxes/location-meta.php:13
+#: parts/meta-boxes/instructor-meta.php:19
+msgid "Event instructor"
+msgstr "Instructor del evento"
+
+#: parts/meta-boxes/location-meta.php:14
 msgid "Choose venue"
 msgstr "Escoger lugar"
 
-#: parts/meta-boxes/location-meta.php:14
+#: parts/meta-boxes/location-meta.php:15
 msgid ""
 "Choose OTHER to enter different venue details from the default (Yoga Mandir)."
 msgstr ""
 "Escoger OTRO para agregar detalles de un lugar que no es el habitual (Yoga "
 "Mandir)."
 
-#: parts/meta-boxes/location-meta.php:17
+#: parts/meta-boxes/location-meta.php:18
 msgid "Other"
 msgstr "Otro"
 
-#: parts/meta-boxes/location-meta.php:25
+#: parts/meta-boxes/location-meta.php:28
 msgid "Venue name"
 msgstr "Nombre del lugar"
 
-#: parts/meta-boxes/location-meta.php:41
+#: parts/meta-boxes/location-meta.php:46
 msgid "Venue address"
 msgstr "Dirección del lugar"
 
-#: parts/meta-boxes/location-meta.php:56
-msgid "Move marker to venue location"
-msgstr "Mover el marcador al lugar"
+#: parts/meta-boxes/pricing-meta.php:15
+msgid "Type of payment"
+msgstr "Tipo de pago"
 
-#: parts/meta-boxes/location-meta.php:70
-msgid "Don't use unless you know what you're doing."
-msgstr "No usar a menos de que sepás lo que estás haciendo."
+#: parts/meta-boxes/pricing-meta.php:18
+msgid "Free"
+msgstr "Gratis"
 
-#: parts/meta-boxes/location-meta.php:74
-msgid "i.e. \"$100 antes del 1 de mayo\""
-msgstr "por ejemplo, \"$100 antes del 1 de mayo\""
+#: parts/meta-boxes/pricing-meta.php:19
+#, fuzzy
+#| msgid "Regular price"
+msgid "Set price"
+msgstr "Precio normal"
 
-#: parts/meta-boxes/pricing-meta.php:13
+#: parts/meta-boxes/pricing-meta.php:20
+msgid "Donation"
+msgstr "Donación"
+
+#: parts/meta-boxes/pricing-meta.php:30
 msgid "Currency"
 msgstr "Moneda"
 
-#: parts/meta-boxes/pricing-meta.php:14
+#: parts/meta-boxes/pricing-meta.php:31
 msgid "This controlls what symbol is appended to the price."
 msgstr "Controla el símbolo monetario que va antes del precio."
 
-#: parts/meta-boxes/pricing-meta.php:16
+#: parts/meta-boxes/pricing-meta.php:33
 msgid "US dollars ($)"
 msgstr "Dólares ($)"
 
-#: parts/meta-boxes/pricing-meta.php:17
+#: parts/meta-boxes/pricing-meta.php:34
 msgid "CR colones (₡)"
 msgstr "Colones (₡)"
 
-#: parts/meta-boxes/pricing-meta.php:25
-msgid "Regular price"
-msgstr "Precio normal"
+#: parts/meta-boxes/pricing-meta.php:55
+msgid "Suggested donation"
+msgstr "Donación sugerida"
 
-#: parts/meta-boxes/pricing-meta.php:26
+#: parts/meta-boxes/pricing-meta.php:56 parts/meta-boxes/pricing-meta.php:81
 msgid "Must be a number."
 msgstr "Debe ser un número."
 
-#: parts/meta-boxes/pricing-meta.php:27 parts/meta-boxes/pricing-meta.php:50
+#: parts/meta-boxes/pricing-meta.php:57 parts/meta-boxes/pricing-meta.php:82
+#: parts/meta-boxes/pricing-meta.php:114
 msgid "Must be \"100\", \"10.5\", etc. Not \"100 dollars\"."
 msgstr "Debe ser “100”, “10.5”, etc. No “100 dólares”."
 
-#: parts/meta-boxes/pricing-meta.php:30 parts/meta-boxes/pricing-meta.php:53
+#: parts/meta-boxes/pricing-meta.php:60 parts/meta-boxes/pricing-meta.php:85
+#: parts/meta-boxes/pricing-meta.php:117
 msgid "100"
 msgstr "100"
 
-#: parts/meta-boxes/pricing-meta.php:41
+#: parts/meta-boxes/pricing-meta.php:80
+msgid "Regular price"
+msgstr "Precio normal"
+
+#: parts/meta-boxes/pricing-meta.php:105
 msgid "Pricing options"
 msgstr "Opciones de precio"
 
-#: parts/meta-boxes/pricing-meta.php:42
+#: parts/meta-boxes/pricing-meta.php:106
 msgid "Add as many as needed. Price must be a number."
 msgstr "Añadir todas las necesarias. Precio debe ser un número."
 
-#: parts/meta-boxes/pricing-meta.php:49
+#: parts/meta-boxes/pricing-meta.php:113
 msgid "Price"
 msgstr "Precio"
 
-#: parts/meta-boxes/pricing-meta.php:67
+#: parts/meta-boxes/pricing-meta.php:129
 msgid "Descripción"
 msgstr ""
 
-#: parts/meta-boxes/pricing-meta.php:70
+#: parts/meta-boxes/pricing-meta.php:132
 msgid "Early bird price before May 5"
 msgstr "Precio pronto pago antes del 5 de mayo"
 
-#: parts/meta-boxes/pricing-meta.php:82
+#: parts/meta-boxes/pricing-meta.php:150
 msgid "Pricing notes"
 msgstr "Notas sobre precio"
 
-#: parts/meta-boxes/pricing-meta.php:83
+#: parts/meta-boxes/pricing-meta.php:151
 msgid "Further explanation needed to clarify pricing."
 msgstr "Explicaciones adicionales necesarias para explicar precio."
 
-#: parts/meta-boxes/pricing-meta.php:84
+#: parts/meta-boxes/pricing-meta.php:152
 msgid ""
 "For instance, if you need to explain discount conditions, payment schedule, "
 "etc."
 msgstr ""
 "Por ejemplo, si es necesario explicar condiciones para descuentos, "
 "cronograma de pagos, etc."
+
+#: parts/meta-boxes/pricing-meta.php:165
+msgid "Show reservation form"
+msgstr "Mostrar formulario de reserva"
+
+#: parts/meta-boxes/pricing-meta.php:178
+msgid "Show bank information"
+msgstr "Mostrar información bancaria"
+
+#: parts/meta-boxes/pricing-meta.php:181
+msgid "Local"
+msgstr ""
+
+#: parts/meta-boxes/pricing-meta.php:182
+msgid "International"
+msgstr "Internacional"
+
+#: parts/meta-boxes/redirect-url.php:13
+msgid "Choose what page to redirect to"
+msgstr "Escoger a cuál página llevar"
 
 #. Plugin Name of the plugin/theme
 msgid "MRo Events"
@@ -244,8 +295,17 @@ msgstr ""
 
 #. Author of the plugin/theme
 msgid "Mat Rosero"
-msgstr ""
+msgstr "Local"
 
 #. Author URI of the plugin/theme
 msgid "http://2tabbies.com"
 msgstr ""
+
+#~ msgid "Move marker to venue location"
+#~ msgstr "Mover el marcador al lugar"
+
+#~ msgid "Don't use unless you know what you're doing."
+#~ msgstr "No usar a menos de que sepás lo que estás haciendo."
+
+#~ msgid "i.e. \"$100 antes del 1 de mayo\""
+#~ msgstr "por ejemplo, \"$100 antes del 1 de mayo\""

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MRo Class Schedule\n"
-"POT-Creation-Date: 2017-07-30 21:53-0600\n"
-"PO-Revision-Date: 2017-07-30 21:55-0600\n"
+"POT-Creation-Date: 2017-09-03 17:36-0600\n"
+"PO-Revision-Date: 2017-09-03 17:36-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_MX\n"
@@ -21,93 +21,137 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: mro-class-schedule.php:28
+#: inc/schedule-functions.php:55
+msgid "Choose type"
+msgstr "Escoger tipo"
+
+#: inc/schedule-functions.php:58
+msgid "Class"
+msgstr "Clase"
+
+#: inc/schedule-functions.php:59
+msgid "Event"
+msgstr "Evento"
+
+#: inc/schedule-functions.php:60
+msgid "Manual entry"
+msgstr "Añadir manualmente"
+
+#: inc/schedule-functions.php:68
+msgid "Choose class"
+msgstr "Escoger clase"
+
+#: inc/schedule-functions.php:83 inc/schedule-functions.php:127
+msgid "Choose teacher"
+msgstr "Escoger profesor"
+
+#: inc/schedule-functions.php:98
+msgid "Choose event"
+msgstr "Escoger evento"
+
+#: inc/schedule-functions.php:113
+msgid "Enter class/event name"
+msgstr "Introducir nombre de clase/evento"
+
+#: inc/schedule-functions.php:143
+msgid "Teacher's name"
+msgstr "Nombre del profesor"
+
+#: inc/schedule-functions.php:163
+msgid "Time start"
+msgstr "Hora inicio"
+
+#: inc/schedule-functions.php:172
+msgid "Time end"
+msgstr "Hora fin"
+
+#: mro-class-schedule.php:34
 msgctxt "post type general name"
 msgid "Classes"
 msgstr "Clases"
 
-#: mro-class-schedule.php:29
+#: mro-class-schedule.php:35
 msgctxt "post type singular name"
 msgid "Class"
 msgstr "Clase"
 
-#: mro-class-schedule.php:30
+#: mro-class-schedule.php:36
 msgctxt "admin menu"
 msgid "Classes"
 msgstr "Clases"
 
-#: mro-class-schedule.php:31
+#: mro-class-schedule.php:37
 msgctxt "add new on admin bar"
 msgid "Classes"
 msgstr "Clases"
 
-#: mro-class-schedule.php:32
+#: mro-class-schedule.php:38
 msgctxt "book"
 msgid "Add New"
 msgstr "Añadir nueva"
 
-#: mro-class-schedule.php:33
+#: mro-class-schedule.php:39
 msgid "Add New Class"
 msgstr "Añadir nueva clase"
 
-#: mro-class-schedule.php:34
+#: mro-class-schedule.php:40
 msgid "New Class"
 msgstr "Nueva Clase"
 
-#: mro-class-schedule.php:35
+#: mro-class-schedule.php:41
 msgid "Edit Class"
 msgstr "Editar Clase"
 
-#: mro-class-schedule.php:36
+#: mro-class-schedule.php:42
 msgid "View Class"
 msgstr "Ver Clase"
 
-#: mro-class-schedule.php:37
+#: mro-class-schedule.php:43
 msgid "All Classes"
 msgstr "Todas las Clases"
 
-#: mro-class-schedule.php:38
+#: mro-class-schedule.php:44
 msgid "Search Classes"
 msgstr "Buscar Clases"
 
-#: mro-class-schedule.php:39
+#: mro-class-schedule.php:45
 msgid "Parent Classes:"
 msgstr "Clases superiores:"
 
-#: mro-class-schedule.php:40
+#: mro-class-schedule.php:46
 msgid "No Classes found."
 msgstr "No se han encontrado Clases."
 
-#: mro-class-schedule.php:41
+#: mro-class-schedule.php:47
 msgid "No Classes found in Trash."
 msgstr "No hay clases en la Papelera."
 
-#: mro-class-schedule.php:47
+#: mro-class-schedule.php:53
 msgid "Enter a new Class"
 msgstr "Añadir nueva clase"
 
-#: mro-class-schedule.php:107 mro-class-schedule.php:108
-msgid "Class Schedule Settings"
-msgstr "Configuración de Horario"
+#: mro-class-schedule.php:113 mro-class-schedule.php:114
+msgid "Class Schedule Tabs"
+msgstr "Horario de Clases"
 
-#: mro-class-schedule.php:118
+#: mro-class-schedule.php:124
 msgid "Save Schedule Settings"
 msgstr "Guardar cambios al horario"
 
-#: mro-class-schedule.php:123 mro-class-schedule.php:124
+#: mro-class-schedule.php:129 mro-class-schedule.php:130
 msgid "Prices"
 msgstr "Tarifas"
 
-#: mro-class-schedule.php:134
+#: mro-class-schedule.php:140
 msgid "Save Prices"
 msgstr "Guardar tarifas"
 
-#: mro-class-schedule.php:169
+#: mro-class-schedule.php:175
 #, php-format
 msgid "#%d (no title)"
 msgstr "#%d (sin título)"
 
-#: mro-class-schedule.php:177
+#: mro-class-schedule.php:183
 msgid "Other (enter manually)"
 msgstr "Otro (añadir manualmente)"
 
@@ -171,98 +215,65 @@ msgstr "3 clases por semana"
 msgid "Unlimited classes"
 msgstr "Clases ilimitadas"
 
-#: parts/settings/schedule-settings.php:61
-msgid "Choose type"
-msgstr "Escoger tipo"
-
-#: parts/settings/schedule-settings.php:64
-msgid "Class"
-msgstr "Clase"
-
-#: parts/settings/schedule-settings.php:65
-msgid "Event"
-msgstr "Evento"
-
-#: parts/settings/schedule-settings.php:66
-msgid "Manual entry"
-msgstr "Añadir manualmente"
-
-#: parts/settings/schedule-settings.php:74
-msgid "Choose class"
-msgstr "Escoger clase"
-
-#: parts/settings/schedule-settings.php:89
-#: parts/settings/schedule-settings.php:133
-msgid "Choose teacher"
-msgstr "Escoger profesor"
-
-#: parts/settings/schedule-settings.php:104
-msgid "Choose event"
-msgstr "Escoger evento"
-
-#: parts/settings/schedule-settings.php:119
-msgid "Enter class/event name"
-msgstr "Introducir nombre de clase/evento"
-
-#: parts/settings/schedule-settings.php:149
-msgid "Teacher's name"
-msgstr "Nombre del profesor"
-
-#: parts/settings/schedule-settings.php:169
-msgid "Time start"
-msgstr "Hora inicio"
-
-#: parts/settings/schedule-settings.php:178
-msgid "Time end"
-msgstr "Hora fin"
-
-#: parts/settings/schedule-settings.php:195
-msgid "Monday blocks"
-msgstr "Bloques lunes"
-
-#: parts/settings/schedule-settings.php:196
-msgid "Create Monday blocks."
-msgstr "Crear bloques del lunes."
-
-#: parts/settings/schedule-settings.php:205
-msgid "Tuesday blocks"
-msgstr "Bloques martes"
-
-#: parts/settings/schedule-settings.php:206
-msgid "Create Tuesday blocks."
-msgstr "Crear bloques del martes."
-
-#: parts/settings/schedule-settings.php:215
-msgid "Wednesday blocks"
-msgstr "Bloques miércoles"
-
-#: parts/settings/schedule-settings.php:216
-msgid "Create Wednesday blocks."
-msgstr "Crear bloques del miércoles."
-
-#: parts/settings/schedule-settings.php:225
-msgid "Thursday blocks"
-msgstr "Bloques jueves"
-
-#: parts/settings/schedule-settings.php:226
-msgid "Create Thursday blocks."
-msgstr "Crear bloques del jueves."
-
-#: parts/settings/schedule-settings.php:235
+#: parts/settings/schedule-friday-tab.php:14
+#: parts/settings/schedule-settings.php:60
 msgid "Friday blocks"
 msgstr "Bloques viernes"
 
-#: parts/settings/schedule-settings.php:236
+#: parts/settings/schedule-friday-tab.php:15
+#: parts/settings/schedule-settings.php:61
 msgid "Create Friday blocks."
 msgstr "Crear bloques del viernes."
 
-#: parts/settings/schedule-settings.php:245
+#: parts/settings/schedule-monday-tab.php:16
+#: parts/settings/schedule-settings.php:20
+msgid "Monday blocks"
+msgstr "Bloques lunes"
+
+#: parts/settings/schedule-monday-tab.php:17
+#: parts/settings/schedule-settings.php:21
+msgid "Create Monday blocks."
+msgstr "Crear bloques del lunes."
+
+#: parts/settings/schedule-saturday-tab.php:14
+#: parts/settings/schedule-settings.php:70
 msgid "Saturday blocks"
 msgstr "Bloques sábado"
 
-#: parts/settings/schedule-settings.php:246
+#: parts/settings/schedule-saturday-tab.php:15
+#: parts/settings/schedule-settings.php:71
 msgid "Create Saturday blocks."
 msgstr "Crear bloques del sábado."
+
+#: parts/settings/schedule-settings.php:30
+#: parts/settings/schedule-tuesday-tab.php:15
+msgid "Tuesday blocks"
+msgstr "Bloques martes"
+
+#: parts/settings/schedule-settings.php:31
+#: parts/settings/schedule-tuesday-tab.php:16
+msgid "Create Tuesday blocks."
+msgstr "Crear bloques del martes."
+
+#: parts/settings/schedule-settings.php:40
+#: parts/settings/schedule-wednesday-tab.php:14
+msgid "Wednesday blocks"
+msgstr "Bloques miércoles"
+
+#: parts/settings/schedule-settings.php:41
+#: parts/settings/schedule-wednesday-tab.php:15
+msgid "Create Wednesday blocks."
+msgstr "Crear bloques del miércoles."
+
+#: parts/settings/schedule-settings.php:50
+#: parts/settings/schedule-thursday-tab.php:14
+msgid "Thursday blocks"
+msgstr "Bloques jueves"
+
+#: parts/settings/schedule-settings.php:51
+#: parts/settings/schedule-thursday-tab.php:15
+msgid "Create Thursday blocks."
+msgstr "Crear bloques del jueves."
 
 #. Plugin Name of the plugin/theme
 msgid "MRo Class Schedule"

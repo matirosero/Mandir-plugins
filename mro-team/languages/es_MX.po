@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: MRo Team\n"
+"POT-Creation-Date: 2017-09-03 17:46-0600\n"
+"PO-Revision-Date: 2017-09-03 17:48-0600\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: mro-team.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: es_MX\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: mro-team.php:26
+msgctxt "post type general name"
+msgid "Teachers"
+msgstr "Profesores"
+
+#: mro-team.php:27
+msgctxt "post type singular name"
+msgid "Teacher"
+msgstr "Profesor"
+
+#: mro-team.php:28
+msgctxt "admin menu"
+msgid "Teachers"
+msgstr "Profesores"
+
+#: mro-team.php:29
+msgctxt "add new on admin bar"
+msgid "Teachers"
+msgstr "Profesores"
+
+#: mro-team.php:30
+msgctxt "book"
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: mro-team.php:31
+msgid "Add New Teacher"
+msgstr "Añadir nuevo profesor"
+
+#: mro-team.php:32
+msgid "New Teacher"
+msgstr "Nuevo profesor"
+
+#: mro-team.php:33
+msgid "Edit Teacher"
+msgstr "Editar Profesor"
+
+#: mro-team.php:34
+msgid "View Teacher"
+msgstr "Ver profesor"
+
+#: mro-team.php:35
+msgid "All Teachers"
+msgstr "Todos los profesores"
+
+#: mro-team.php:36
+msgid "Search Teachers"
+msgstr "Buscar profesores"
+
+#: mro-team.php:37
+msgid "Parent Teachers:"
+msgstr "Profesores padres"
+
+#: mro-team.php:38
+msgid "No Teachers found."
+msgstr "No se han encontrado profesores"
+
+#: mro-team.php:39
+msgid "No Teachers found in Trash."
+msgstr "No hay profesores en la papelera"
+
+#: mro-team.php:45
+msgid "Enter a new Teacher"
+msgstr "Introducir nuevo profesor"
+
+#: parts/meta-boxes/contact-meta.php:13
+msgid "How to contact"
+msgstr "Cómo contactar"
+
+#: parts/meta-boxes/contact-meta.php:15
+msgid ""
+"A grouped field with a key set. Data is not searchable, since it is saved in "
+"an array."
+msgstr ""
+"Un campo agrupado con un conjunto de claves. Datos no son accesible ya que "
+"se guarda en un array."
+
+#: parts/meta-boxes/contact-meta.php:20
+msgid "Email"
+msgstr ""
+
+#: parts/meta-boxes/contact-meta.php:29
+msgid "Show email"
+msgstr "Mostrar email"
+
+#: parts/meta-boxes/contact-meta.php:38
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+#: parts/meta-boxes/contact-meta.php:47
+msgid "Facebook"
+msgstr ""
+
+#: parts/meta-boxes/contact-meta.php:56
+msgid "Website"
+msgstr "Sitio web"
+
+#: parts/meta-boxes/images-meta.php:34
+msgid "Main photo"
+msgstr "Foto principal"
+
+#: parts/meta-boxes/images-meta.php:35
+msgid "If possible, this should be a portrait."
+msgstr "Si es posible, esto debería ser un retrato."
+
+#: parts/meta-boxes/images-meta.php:38 parts/meta-boxes/images-meta.php:61
+msgid "Add File(s)"
+msgstr "Añadir archivo(s)"
+
+#: parts/meta-boxes/images-meta.php:39 parts/meta-boxes/images-meta.php:62
+msgid "Add"
+msgstr "Añadir"
+
+#: parts/meta-boxes/images-meta.php:58
+msgid "Secondary photo"
+msgstr "Foto secundaria"
+
+#: parts/meta-boxes/images-meta.php:59
+msgid "This should be a yoga pose."
+msgstr "Esto debe ser una pose de yoga."
+
+#. Plugin Name of the plugin/theme
+msgid "MRo Team"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://URI_Of_Page_Describing_Plugin_and_Updates"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Sets up custom post types for Yoga Mandir."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mat Rosero"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://2tabbies.com"
+msgstr ""
