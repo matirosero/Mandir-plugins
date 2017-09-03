@@ -20,6 +20,12 @@ function mro_class_schedule_load_plugin_textdomain() {
 add_action( 'plugins_loaded', 'mro_class_schedule_load_plugin_textdomain' );
 
 
+//Include files
+foreach ( glob( plugin_dir_path( __FILE__ ) . "inc/*.php" ) as $file ) {
+    include_once $file;
+}
+
+
 // Classes post type
 add_filter('piklist_post_types', 'mro_class_schedule_post_types');
 function mro_class_schedule_post_types($post_types) {
@@ -101,6 +107,22 @@ function mro_class_schedule_tax($taxonomies) {
 
 add_filter('piklist_admin_pages', 'mro_schedule_admin_pages');
 function mro_schedule_admin_pages($pages) {
+
+	//Class Schedule Tabs settings
+  $pages[] = array(
+    'page_title' => __('Class Schedule Tabs', 'mro-class-schedule'),
+    'menu_title' => __('Class Schedule Tabs', 'mro-class-schedule'),
+    'sub_menu' => 'edit.php?post_type=mro-class',
+    'capability' => 'manage_options',
+    'menu_slug' => 'mro_schedule_tabs',
+    'setting' => 'mro_schedule_tabs',
+    'menu_icon' => piklist('url', 'piklist') . '/parts/img/piklist-icon.png',
+    'page_icon' => piklist('url', 'piklist') . '/parts/img/piklist-page-icon-32.png',
+    // 'single_line' => true,
+    'default_tab' => 'Basic',
+    // 'layout' => 'meta-boxes', // NOTE: Uncomment this to use the meta box layout on this settings page!
+    'save_text' => __('Save Schedule Settings', 'mro-class-schedule'),
+  );
 
 	//Class Schedule settings
   $pages[] = array(
