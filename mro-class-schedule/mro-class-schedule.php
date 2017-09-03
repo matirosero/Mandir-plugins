@@ -124,22 +124,6 @@ function mro_schedule_admin_pages($pages) {
     'save_text' => __('Save Schedule Settings', 'mro-class-schedule'),
   );
 
-	//Class Schedule settings
-  $pages[] = array(
-    'page_title' => __('Class Schedule Settings', 'mro-class-schedule'),
-    'menu_title' => __('Class Schedule Settings', 'mro-class-schedule'),
-    'sub_menu' => 'edit.php?post_type=mro-class',
-    'capability' => 'manage_options',
-    'menu_slug' => 'mro_schedule_settings',
-    'setting' => 'mro_class_schedule_settings',
-    'menu_icon' => piklist('url', 'piklist') . '/parts/img/piklist-icon.png',
-    'page_icon' => piklist('url', 'piklist') . '/parts/img/piklist-page-icon-32.png',
-    // 'single_line' => true,
-    'default_tab' => 'Basic',
-    // 'layout' => 'meta-boxes', // NOTE: Uncomment this to use the meta box layout on this settings page!
-    'save_text' => __('Save Schedule Settings', 'mro-class-schedule'),
-  );
-
 	//Prices settings
   $pages[] = array(
     'page_title' => __('Prices', 'mro-class-schedule'),
