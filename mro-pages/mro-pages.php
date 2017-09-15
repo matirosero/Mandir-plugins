@@ -32,7 +32,7 @@ function mro_admin_pages($pages) {
 		'page_title' => __('Mandir Settings')
 		,'menu_title' => __('Mandir Settings', 'piklist-demo')
 		// ,'sub_menu' => 'edit.php?post_type=piklist_demo'
-		,'capability' => 'manage_options'
+		,'capability' => 'edit_others_posts'
 		,'menu_slug' => 'mandir_fields'
 		,'setting' => 'mandir_fields'
 		,'menu_icon' => 'dashicons-admin-home'
