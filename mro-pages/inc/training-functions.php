@@ -1,18 +1,101 @@
 <?php
 
-
 //Open or closed
 function training_state() {
-  piklist('field', array(
-    'type' => 'radio',
-    'field' => 'mro_training_state',
-    'label' => __('Enrollment state', 'mro-pages'),
-    'value' => '0',
-    'choices' => array(
-      0 => __('Enrollment closed', 'mro-pages'),
-      1 => __('Enrollment open', 'mro-pages'),
-    ),
-  ));
+	piklist('field', array(
+		'type' => 'radio',
+		'field' => 'mro_training_state',
+		'label' => __('Enrollment state', 'mro-pages'),
+		'value' => 'closed',
+		'choices' => array(
+			'closed' => __('Enrollment closed', 'mro-pages'),
+			'url' => __('Students go to link to enroll', 'mro-pages'),
+			'form' => __('Students fill form to enroll', 'mro-pages'),
+		),
+	));
+
+	piklist('field', array(
+	    'type' => 'url',
+	    'field' => 'mro_training_enroll_url',
+	    'label' => __('URL where students can enroll', 'mro-pages'),
+	    'attributes' => array(
+	      	'placeholder' => 'http://www.website.com',
+	      	'class' => 'large-text',
+	    ),
+	    'conditions' => array(
+	      	array(
+	       		'field' => 'mro_training_state',
+	        	'value' => 'url',
+	      	)
+	    ),
+	));
+
+	piklist('field', array(
+	    'type' => 'text',
+	    'field' => 'mro_training_enroll_shortcode',
+	    'label' => __('Enrollment form shortcode', 'mro-pages'),
+	    'attributes' => array(
+	     	'placeholder' => '[caldera_form id="CF58e57f617099d"]',
+	      	'class' => 'large-text',
+	    ),
+	    'conditions' => array(
+	      	array(
+	        	'field' => 'mro_training_state',
+	        	'value' => 'form',
+	      	)
+	    ),
+	));
+
+	piklist('field', array(
+		'type' => 'editor',
+		'field' => 'mro_training_enroll_text',
+		'label' => __('How to enroll', 'mro-pages'),
+		// 'description' => __('Information about the teachers.', 'mro-pages'),
+		'options' => array(
+			'media_buttons' => false,
+			'teeny' => true,
+			'textarea_rows' => 5,
+			'drag_drop_upload' => false,
+			'tinymce' => array(
+				'resize' => false,
+				'wp_autoresize_on' => true,
+			),
+		),
+		'conditions' => array(
+			'relation' => 'or',
+			array(
+				'field' => 'mro_training_state',
+				'value' => 'form',
+			),
+			array(
+				'field' => 'mro_training_state',
+				'value' => 'url',
+			),
+		),
+	));
+}
+
+//Enrolling
+function training_enroll() {
+	piklist('field', array(
+	  'type' => 'group',
+	  'field' => 'mro_training_howtoenroll', // Including a field at this level saves all data in a serialized array.
+	  'label' => __('How to enroll', 'mro-pages'),
+	  'description' => __('Each line will be a bullet point.', 'mro-pages'),
+	  'add_more' => true,
+	  'fields' => array(
+	    array(
+	      'type' => 'textarea',
+	      'field' => 'point',
+	      // 'label' => __('One recommendation per line', 'mro-pages'),
+	      'attributes' => array(
+	        'rows' => 3,
+	        'cols' => 50,
+	        'class' => 'large-text',
+	      ),
+	    ),
+	  ),
+	));
 }
 
 //Certification dates
@@ -284,28 +367,7 @@ function training_teachers($tax) {
 
 }
 
-//Enrolling
-function training_enroll() {
-	piklist('field', array(
-	  'type' => 'group',
-	  'field' => 'mro_training_howtoenroll', // Including a field at this level saves all data in a serialized array.
-	  'label' => __('How to enroll', 'mro-pages'),
-	  'description' => __('Each line will be a bullet point.', 'mro-pages'),
-	  'add_more' => true,
-	  'fields' => array(
-	    array(
-	      'type' => 'textarea',
-	      'field' => 'point',
-	      // 'label' => __('One recommendation per line', 'mro-pages'),
-	      'attributes' => array(
-	        'rows' => 3,
-	        'cols' => 50,
-	        'class' => 'large-text',
-	      ),
-	    ),
-	  ),
-	));
-}
+
 
 //Schedule
 function training_schedule_simple() {

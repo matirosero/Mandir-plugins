@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Estado
+Title: Inscripción
 Post Type: page
 Context: normal
 Priority: high
