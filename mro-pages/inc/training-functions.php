@@ -6,9 +6,19 @@ function training_state() {
 		'type' => 'radio',
 		'field' => 'mro_training_state',
 		'label' => __('Enrollment state', 'mro-pages'),
-		'value' => 'closed',
+		'value' => '0',
 		'choices' => array(
-			'closed' => __('Enrollment closed', 'mro-pages'),
+			0 => __('Enrollment closed', 'mro-pages'),
+			1 => __('Enrollment open', 'mro-pages'),
+		),
+	));
+
+	piklist('field', array(
+		'type' => 'radio',
+		'field' => 'mro_training_enroll_how',
+		'label' => __('How students enroll', 'mro-pages'),
+		'value' => '0',
+		'choices' => array(
 			'url' => __('Students go to link to enroll', 'mro-pages'),
 			'form' => __('Students fill form to enroll', 'mro-pages'),
 		),
@@ -24,7 +34,7 @@ function training_state() {
 	    ),
 	    'conditions' => array(
 	      	array(
-	       		'field' => 'mro_training_state',
+	       		'field' => 'mro_training_enroll_how',
 	        	'value' => 'url',
 	      	)
 	    ),
@@ -40,7 +50,7 @@ function training_state() {
 	    ),
 	    'conditions' => array(
 	      	array(
-	        	'field' => 'mro_training_state',
+	        	'field' => 'mro_training_enroll_how',
 	        	'value' => 'form',
 	      	)
 	    ),
@@ -59,17 +69,6 @@ function training_state() {
 			'tinymce' => array(
 				'resize' => false,
 				'wp_autoresize_on' => true,
-			),
-		),
-		'conditions' => array(
-			'relation' => 'or',
-			array(
-				'field' => 'mro_training_state',
-				'value' => 'form',
-			),
-			array(
-				'field' => 'mro_training_state',
-				'value' => 'url',
 			),
 		),
 	));
