@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MRo Mandir Pages\n"
-"POT-Creation-Date: 2017-09-16 17:57-0600\n"
-"PO-Revision-Date: 2017-09-16 17:58-0600\n"
+"POT-Creation-Date: 2017-10-26 22:30-0600\n"
+"PO-Revision-Date: 2017-10-26 22:31-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_MX\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -39,251 +39,261 @@ msgid "Enrollment closed"
 msgstr "Matrícula cerrada"
 
 #: inc/training-functions.php:12
+msgid "Enrollment open"
+msgstr "Matrícula abierta"
+
+#: inc/training-functions.php:19
+#, fuzzy
+#| msgid "How to enroll"
+msgid "How students enroll"
+msgstr "Cómo matricular"
+
+#: inc/training-functions.php:22
 msgid "Students go to link to enroll"
 msgstr "Los estudiantes deben ir a enlace para inscribirse"
 
-#: inc/training-functions.php:13
+#: inc/training-functions.php:23
 msgid "Students fill form to enroll"
 msgstr "Los estudiantes llenan formulario para inscribirse"
 
-#: inc/training-functions.php:20
+#: inc/training-functions.php:30
 msgid "URL where students can enroll"
 msgstr "URL donde los estudiantes pueden inscribirse"
 
-#: inc/training-functions.php:36
+#: inc/training-functions.php:46
 msgid "Enrollment form shortcode"
 msgstr "Shortcode de formulario de inscripción"
 
-#: inc/training-functions.php:52 inc/training-functions.php:83
+#: inc/training-functions.php:62 inc/training-functions.php:82
 msgid "How to enroll"
 msgstr "Cómo matricular"
 
-#: inc/training-functions.php:84 inc/training-functions.php:207
-#: inc/training-functions.php:230 parts/meta-boxes/training-curriculum.php:16
+#: inc/training-functions.php:83 inc/training-functions.php:206
+#: inc/training-functions.php:229 parts/meta-boxes/training-curriculum.php:16
 msgid "Each line will be a bullet point."
 msgstr "Cada línea será un bullet."
 
-#: inc/training-functions.php:105
+#: inc/training-functions.php:104
 msgid "Dates"
 msgstr "Fechas"
 
-#: inc/training-functions.php:112 parts/meta-boxes/india-dates.php:42
+#: inc/training-functions.php:111 parts/meta-boxes/india-dates.php:42
 #: parts/meta-boxes/thai-modules.php:82
 msgid "Date start"
 msgstr "Fecha de inicio"
 
-#: inc/training-functions.php:121 parts/meta-boxes/india-dates.php:51
+#: inc/training-functions.php:120 parts/meta-boxes/india-dates.php:51
 #: parts/meta-boxes/thai-modules.php:91
 msgid "Date end"
 msgstr "Fecha de fin"
 
-#: inc/training-functions.php:133
+#: inc/training-functions.php:132
 msgid "Mostrar únicamente meses"
 msgstr ""
 
-#: inc/training-functions.php:134
+#: inc/training-functions.php:133
 msgid "Mostrar fechas exactas"
 msgstr ""
 
-#: inc/training-functions.php:145
+#: inc/training-functions.php:144
 msgid "Orientation"
 msgstr "Orientación"
 
-#: inc/training-functions.php:153 inc/training-functions.php:512
+#: inc/training-functions.php:152 inc/training-functions.php:511
 msgid "Date"
 msgstr "Fecha"
 
-#: inc/training-functions.php:162
+#: inc/training-functions.php:161
 msgid "Time"
 msgstr "Hora"
 
-#: inc/training-functions.php:171
+#: inc/training-functions.php:170
 msgid "Mostrar orientación"
 msgstr ""
 
-#: inc/training-functions.php:183
+#: inc/training-functions.php:182
 msgid "Recommendations"
 msgstr "Recomendaciones"
 
-#: inc/training-functions.php:184
+#: inc/training-functions.php:183
 msgid "One recommendation per line. Each line will be a bullet point."
 msgstr "Una recomendación por línea. Cada línea será un bullet."
 
-#: inc/training-functions.php:229
+#: inc/training-functions.php:228
 msgid "Certification"
 msgstr "Reconocimiento"
 
-#: inc/training-functions.php:256
+#: inc/training-functions.php:255
 msgid "One teacher for the whole certification?"
 msgstr "¿Un solo profesor para toda la certificación?"
 
-#: inc/training-functions.php:259
+#: inc/training-functions.php:258
 msgid "One teacher"
 msgstr "Un profesor"
 
-#: inc/training-functions.php:260
+#: inc/training-functions.php:259
 msgid "Different teachers for each program"
 msgstr "Profesores diferentes para cada programa"
 
-#: inc/training-functions.php:269 inc/training-functions.php:317
+#: inc/training-functions.php:268 inc/training-functions.php:316
 #: parts/meta-boxes/thai-modules.php:60
 msgid "Choose teacher"
 msgstr "Escoger profesor"
 
-#: inc/training-functions.php:283
+#: inc/training-functions.php:282
 msgid "Select the teacher in each module's section."
 msgstr "Seleccione el profesor en la sección de cada módulo."
 
-#: inc/training-functions.php:304
+#: inc/training-functions.php:303
 msgid "Select a teacher or fill in information"
 msgstr "Escoger profesor o llenar información"
 
-#: inc/training-functions.php:307
+#: inc/training-functions.php:306
 msgid "Select a teacher"
 msgstr "Escoger profesor"
 
-#: inc/training-functions.php:308
+#: inc/training-functions.php:307
 msgid "Fill in teacher information"
 msgstr "Llenar la información del profesor"
 
-#: inc/training-functions.php:332
+#: inc/training-functions.php:331
 msgid "Teachers"
 msgstr "Profesorado"
 
-#: inc/training-functions.php:333
+#: inc/training-functions.php:332
 msgid "Information about the teachers."
 msgstr "Información sobre los profesores."
 
-#: inc/training-functions.php:356
+#: inc/training-functions.php:355
 msgid "Image to show in this section"
 msgstr "Imagen a mostrar en esta sección"
 
-#: inc/training-functions.php:377 inc/training-functions.php:432
+#: inc/training-functions.php:376 inc/training-functions.php:431
 msgid "Schedule"
 msgstr "Horario"
 
-#: inc/training-functions.php:384 inc/training-functions.php:474
-#: inc/training-functions.php:521 parts/meta-boxes/training-types.php:53
+#: inc/training-functions.php:383 inc/training-functions.php:473
+#: inc/training-functions.php:520 parts/meta-boxes/training-types.php:53
 msgid "Time start"
 msgstr "Hora inicio"
 
-#: inc/training-functions.php:390 inc/training-functions.php:480
-#: inc/training-functions.php:527 parts/meta-boxes/training-types.php:59
+#: inc/training-functions.php:389 inc/training-functions.php:479
+#: inc/training-functions.php:526 parts/meta-boxes/training-types.php:59
 msgid "Time end"
 msgstr "Hora fin"
 
-#: inc/training-functions.php:396 inc/training-functions.php:439
+#: inc/training-functions.php:395 inc/training-functions.php:438
 #: parts/meta-boxes/training-types.php:65
 msgid "Days"
 msgstr "Días"
 
-#: inc/training-functions.php:401 parts/meta-boxes/training-types.php:70
+#: inc/training-functions.php:400 parts/meta-boxes/training-types.php:70
 msgid "Monday"
 msgstr "Lunes"
 
-#: inc/training-functions.php:402 parts/meta-boxes/training-types.php:71
+#: inc/training-functions.php:401 parts/meta-boxes/training-types.php:71
 msgid "Tuesday"
 msgstr "Martes"
 
-#: inc/training-functions.php:403 parts/meta-boxes/training-types.php:72
+#: inc/training-functions.php:402 parts/meta-boxes/training-types.php:72
 msgid "Wednesday"
 msgstr "Miércoles"
 
-#: inc/training-functions.php:404 parts/meta-boxes/training-types.php:73
+#: inc/training-functions.php:403 parts/meta-boxes/training-types.php:73
 msgid "Thursday"
 msgstr "Jueves"
 
-#: inc/training-functions.php:405 parts/meta-boxes/training-types.php:74
+#: inc/training-functions.php:404 parts/meta-boxes/training-types.php:74
 msgid "Friday"
 msgstr "Viernes"
 
-#: inc/training-functions.php:406 parts/meta-boxes/training-types.php:75
+#: inc/training-functions.php:405 parts/meta-boxes/training-types.php:75
 msgid "Saturday"
 msgstr "Sábado"
 
-#: inc/training-functions.php:407 parts/meta-boxes/training-types.php:76
+#: inc/training-functions.php:406 parts/meta-boxes/training-types.php:76
 msgid "Sunday"
 msgstr "Domingo"
 
-#: inc/training-functions.php:413 inc/training-functions.php:447
+#: inc/training-functions.php:412 inc/training-functions.php:446
 msgid "Additional notes"
 msgstr "Notas complementarias"
 
-#: inc/training-functions.php:468
+#: inc/training-functions.php:467
 msgid "Daily schedule"
 msgstr "Programa diario"
 
-#: inc/training-functions.php:486 parts/meta-boxes/thai-modules.php:29
+#: inc/training-functions.php:485 parts/meta-boxes/thai-modules.php:29
 #: parts/meta-boxes/training-curriculum.php:34
 #: parts/meta-boxes/training-types.php:41
 msgid "Description"
 msgstr "Descripción"
 
-#: inc/training-functions.php:499
+#: inc/training-functions.php:498
 msgid "Calendar"
 msgstr "Calendario"
 
-#: inc/training-functions.php:506 parts/meta-boxes/india-dates.php:36
+#: inc/training-functions.php:505 parts/meta-boxes/india-dates.php:36
 #: parts/meta-boxes/training-curriculum.php:22
 msgid "Title"
 msgstr "Título"
 
-#: inc/training-functions.php:543 parts/meta-boxes/product-bulk-price.php:37
+#: inc/training-functions.php:542 parts/meta-boxes/product-bulk-price.php:37
 msgid "Currency"
 msgstr "Moneda"
 
-#: inc/training-functions.php:544 parts/meta-boxes/product-bulk-price.php:38
+#: inc/training-functions.php:543 parts/meta-boxes/product-bulk-price.php:38
 msgid "This controlls what symbol is appended to the price."
 msgstr "Controla el símbolo monetario que va antes del precio."
 
-#: inc/training-functions.php:546 parts/meta-boxes/product-bulk-price.php:40
+#: inc/training-functions.php:545 parts/meta-boxes/product-bulk-price.php:40
 msgid "US dollars ($)"
 msgstr "Dólares ($)"
 
-#: inc/training-functions.php:547 parts/meta-boxes/product-bulk-price.php:41
+#: inc/training-functions.php:546 parts/meta-boxes/product-bulk-price.php:41
 msgid "CR colones (₡)"
 msgstr "Colones (₡)"
 
-#: inc/training-functions.php:557
+#: inc/training-functions.php:556
 msgid "Pricing options"
 msgstr "Opciones de precio"
 
-#: inc/training-functions.php:558
+#: inc/training-functions.php:557
 msgid "Add as many as needed. Price must be a number."
 msgstr "Añadir todas las necesarias. Precio debe ser un número."
 
-#: inc/training-functions.php:565 parts/meta-boxes/product-bulk-price.php:74
+#: inc/training-functions.php:564 parts/meta-boxes/product-bulk-price.php:74
 #: parts/meta-boxes/training-types.php:27
 msgid "Price"
 msgstr "Precio"
 
-#: inc/training-functions.php:566
+#: inc/training-functions.php:565
 msgid "Must be \"100\", \"10.5\", etc. Not \"100 dollars\"."
 msgstr "Debe ser “100”, “10.5”, etc. No “100 dólares”."
 
-#: inc/training-functions.php:569 parts/meta-boxes/training-payment.php:76
+#: inc/training-functions.php:568 parts/meta-boxes/training-payment.php:76
 #: parts/meta-boxes/training-types.php:30
 msgid "100"
 msgstr "100"
 
-#: inc/training-functions.php:581 parts/meta-boxes/training-payment.php:38
+#: inc/training-functions.php:580 parts/meta-boxes/training-payment.php:38
 #: parts/meta-boxes/training-payment.php:88
 msgid "Descripción"
 msgstr ""
 
-#: inc/training-functions.php:584
+#: inc/training-functions.php:583
 msgid "Early bird price before May 5"
 msgstr "Precio pronto pago antes del 5 de mayo"
 
-#: inc/training-functions.php:596
+#: inc/training-functions.php:595
 msgid "Pricing notes"
 msgstr "Notas sobre precio"
 
-#: inc/training-functions.php:597
+#: inc/training-functions.php:596
 msgid "Further explanation needed to clarify pricing."
 msgstr "Explicaciones adicionales necesarias para explicar precio."
 
-#: inc/training-functions.php:598
+#: inc/training-functions.php:597
 msgid ""
 "For instance, if you need to explain discount conditions, payment schedule, "
 "etc."
@@ -583,9 +593,6 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://2tabbies.com"
 msgstr ""
-
-#~ msgid "Enrollment open"
-#~ msgstr "Matrícula abierta"
 
 #~ msgid "Course dates"
 #~ msgstr "Fechas del curso"
