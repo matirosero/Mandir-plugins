@@ -4,7 +4,7 @@ Title: Estado
 Post Type: page
 Context: normal
 Priority: high
-Order: 1
+Order: 2
 Template: page-templates/template-thai
 */
 

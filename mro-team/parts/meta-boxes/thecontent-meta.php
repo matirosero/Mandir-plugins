@@ -4,7 +4,7 @@ Title: Biografía
 Post Type: mro-team
 Context: normal
 Priority: high
-Order: 2
+Order: 3
 */
 
 piklist('field', array(

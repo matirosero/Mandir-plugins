@@ -4,7 +4,7 @@ Title: Featured Image(s)
 Post Type: mro-team
 Context: normal
 Priority: high
-Order: 1
+Order: 2
 */
 ?>
 

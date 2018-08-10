@@ -25,6 +25,37 @@ foreach ( glob( plugin_dir_path( __FILE__ ) . "inc/*.php" ) as $file ) {
     include_once $file;
 }
 
+// add_filter('locale', function($locale) {
+//     if ( get_post_meta($post->ID, 'mro_lang', true) == 'en' ) {
+//     	var_dump('hi');
+//     	return 'en_US';
+//     } else {
+//     	return $locale;
+//     	var_dump('bye');
+//     }
+// });
+
+function mro_set_lang( $locale ) {
+	global $post;
+
+	if (get_post_meta($post->ID, 'mro_lang', true) == 'en') {
+		$locale = 'es_US';
+		define('WPLANG', 'en_US');
+	}
+	
+	return $locale; // this is your Locale Code see http://wpcentral.io/internationalization/
+}
+add_filter( 'locale', 'mro_set_lang' );
+
+function is_english() {
+	global $post;
+	if (get_post_meta($post->ID, 'mro_lang', true) == 'en') {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 
 add_filter('piklist_admin_pages', 'mro_admin_pages');
 function mro_admin_pages($pages) {
