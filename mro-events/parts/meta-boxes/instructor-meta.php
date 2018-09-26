@@ -13,34 +13,35 @@ Order: 2
 //     ,'template' => 'field'
 //   ));
 
- // piklist('field', array(
- //    'type' => 'checkbox',
- //    'field' => 'mro_event_instructor',
- //    'label' => __('Event instructor', 'mro-events'),
- //    'choices' => piklist(
- //      get_posts(array(
- //        'post_type' => 'mro-team',
- //        'numberposts' => -1,
- //        'orderby' => 'title',
- //        'order' => 'ASC',
- //        'tax_query' => array(
-	// 				array(
-	// 					'taxonomy' => 'mro_team_tax',
-	// 					'field'    => 'slug',
-	// 					'terms'    => 'taller',
-	// 				),
-	// 			),
- //      )),
- //      array('ID', 'post_title')
- //    ),
- //    'relate' => array(
- //      'scope' => 'post'
- //    )
- //  ));
+//  piklist('field', array(
+//     'type' => 'checkbox',
+//     'field' => 'mro_event_instructor',
+//     'label' => __('Event instructor', 'mro-events'),
+//     'choices' => piklist(
+//       get_posts(array(
+//         'post_type' => 'mro-team',
+//         'numberposts' => -1,
+//         'orderby' => 'title',
+//         'order' => 'ASC',
+//         'tax_query' => array(
+// 					array(
+// 						'taxonomy' => 'mro_team_tax',
+// 						'field'    => 'slug',
+// 						'terms'    => 'taller',
+// 					),
+// 				),
+//       )),
+//       array('ID', 'post_title')
+//     ),
+//     'relate' => array(
+//       'scope' => 'post'
+//     )
+//   ));
 
   piklist('field', array(
     'type' => 'checkbox',
-    'title' => __('Event instructor', 'mro-events'),
+    'title' => __('Event instructor (new)', 'mro-events'),
+    'label' => __('Event instructor (new)', 'mro-events'),
     'choices' => piklist(get_posts(
       array(
         'post_type' => 'mro-team',
