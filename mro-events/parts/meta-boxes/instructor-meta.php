@@ -38,4 +38,12 @@ Order: 2
     )
   ));
 
+  //Select teacher
+  piklist('field', array(
+    'type' => 'select',
+    'field' => 'mro_event_instructor_test',
+    'label' => __('Choose teacher', 'mro-pages'),
+    'columns' => 4,
+    'choices' => mro_training_get_teachers( 'taller' ),
+  ));
  
